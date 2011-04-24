@@ -1,0 +1,27 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns="http://www.w3.org/2005/Atom">
+<channel>
+ <title>James Johnson's Blog</title>
+ <link>http://jamesjohnson.me</link>
+ <description>James Johnson's Blog</description>
+ <updated>{{ site.time | date_to_xmlschema }}</updated>
+ <copyright>Copyright 2010, James Johnson</copyright>
+ <language>en-us</language>
+ <docs>http://validator.w3.org/feed/docs/rss2.html</docs>
+
+ {% for post in site.posts %}
+ <item>
+   <title>{{ post.title }}</title>
+   <author>James Johnson</author>
+   <pubDate>{{ post.date | date_to_xmlschema }}</pubDate>
+   <link>http://jamesjohnson.me{{ post.url }}</link>
+   <guid>http://jamesjohnson.me{{ post.id }}</guid>
+   <description>{{ post.content | xml_escape }}</description>
+ </item>
+ {% endfor %}
+
+ </channel>
+</rss>

@@ -1,0 +1,153 @@
+@charset "UTF-8";
+/* line 3, main.scss */
+body {
+  background-color: #eee;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/* line 8, main.scss */
+div#header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 10px;
+  background-color: #1e1e1e;
+  border-bottom: 1px solid #282828;
+  width: 100%;
+}
+
+/* line 18, main.scss */
+div#sidebar {
+  position: fixed;
+  top: 11px;
+  left: 0px;
+  background-color: #425060;
+  background: url(../images/sidebar.png);
+  background-repeat: repeat-y;
+  width: 350px;
+  height: 100%;
+  border-right: 1px solid #282828;
+}
+/* line 29, main.scss */
+div#sidebar h1 {
+  padding: 40px 10px 10px 0px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 35px;
+  line-height: 40px;
+  text-align: justify;
+  margin-left: 20px;
+  width: 80%;
+  color: #eee;
+  text-shadow: #333333 -1px -1px 0;
+}
+/* line 41, main.scss */
+div#sidebar h2 {
+  padding: 0px 80px 30px 20px;
+  color: #1e1e1e;
+  text-align: right;
+  font-size: 25px;
+  font-weight: normal;
+  text-shadow: #677f9a 1px 1px 0;
+}
+/* line 50, main.scss */
+div#sidebar p {
+  padding: 10px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: left;
+  margin: 0 auto;
+  width: 90%;
+  color: #1e1e1e;
+  text-shadow: #677f9a 1px 1px 0;
+}
+/* line 61, main.scss */
+div#sidebar p a {
+  text-decoration: none;
+  color: #677f9a;
+  text-shadow: none;
+}
+/* line 67, main.scss */
+div#sidebar ul {
+  padding: 10px;
+  background-color: #1e1e1e;
+  -moz-box-shadow: #333333 1px 1px 5px 0;
+  -webkit-box-shadow: #333333 1px 1px 5px 0;
+  -o-box-shadow: #333333 1px 1px 5px 0;
+  box-shadow: #333333 1px 1px 5px 0;
+}
+/* line 72, main.scss */
+div#sidebar ul li {
+  display: inline;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-left: 10px;
+}
+/* line 78, main.scss */
+div#sidebar ul li:hover {
+  margin-top: 1px;
+}
+
+/* line 85, main.scss */
+div.wrapper {
+  width: 960px;
+  margin-left: 375px;
+}
+
+/* line 90, main.scss */
+div#main {
+  color: #454545;
+  width: 700px;
+  float: left;
+  color: #454545;
+}
+/* line 96, main.scss */
+div#main h3 {
+  font-size: 35px;
+  font-family: arial, serif;
+  font-weight: normal;
+  padding: 40px 10px 0px;
+}
+/* line 102, main.scss */
+div#main h3 a {
+  color: #677f9a;
+  text-decoration: none;
+}
+/* line 106, main.scss */
+div#main h3 a:hover {
+  color: #718fb0;
+}
+/* line 112, main.scss */
+div#main h4 {
+  padding: 10px;
+  color: #1e1e1e;
+  font-weight: normal;
+  font-size: 12px;
+  border-bottom: 1px solid #707070;
+}
+/* line 119, main.scss */
+div#main p {
+  text-shadow: #F2F2F2 1px 1px 0;
+  padding: 10px;
+  color: #454545;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* line 129, main.scss */
+div#other {
+  float: left;
+  width: 200px;
+  margin: 40px 20px 10px 25px;
+  min-height: 600px;
+  border-left: 1px solid #707070;
+}
+/* line 136, main.scss */
+div#other h3 {
+  color: #677f9a;
+  padding: 25px;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: arial, serif;
+}

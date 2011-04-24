@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>{{ page.title }}</title>
+    <meta name="author" content="James Johnson" />
+    <meta name="title" content="{{ page.meta_title }}" />
+    <meta property="og:title" content="{{ page.meta_title }}" />
+    <meta property="og:type" content="{{ page.og_type }}" />
+    <meta property="og:site_name" content="James Johnson" />
+    <meta property="og:description" content="{{ page.meta_description }}" />
+<link href='http://fonts.googleapis.com/css?family=Philosopher' rel='stylesheet' type='text/css'>
+    <link href="/css/reset.css" rel="stylesheet" />
+    <link href="/css/main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <img src="/images/floating_banner.png" style="position:fixed;top: 359px; left: 349px;z-index:1;">
+    <div id="header">
+    </div>
+      <div id="sidebar">
+      <h1> James Johnson</h1>
+      <p>Hi, my name is James Johnson and this is my blog. I am really interested in entrepreneurship and technolgy, and will share my thoughts here.</p><p>Previously I have worked at <a href="http://yourenew.com">YouRenew.com</a> as the Director of Operations, and currently am working on <a href="http://elmcitylabs.com">Elm City Labs, LLC</a> doing a little bit of everything. I graduated from Yale in 2009, and I am from Philadelphia.</p>
+      <p> Have any questions? Contact me below.</p>
+      <ul>
+        <li><a href="http://facebook.com/jamesjohnsona"><img src="/images/icon_facebook.png"></a></li>
+        <li><a href="http://linkedin.com/in/jamesjohnsona"><img src="/images/icon_linkedin.png"></a></li>
+        <li><a href="mailto:jamesjohnson11@gmail.com"><img src="/images/icon_mail.png"></a></li>
+        <li><a href="http://twitter.com/jamesjohnsona"><img src="/images/icon_twitter.png"></a></li>
+        <li><a href="http://jamesjohnsona.tumblr.com"><img src="/images/icon_tumblr.png"></a></li>
+      </ul>
+    </div>
+    <div class="wrapper">
+      {{ content }}
+    </div> 
+  </body>
+</html>

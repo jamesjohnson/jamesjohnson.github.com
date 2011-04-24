@@ -1,0 +1,144 @@
+@import "compass/css3";
+
+body {
+  background-color: #eee;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+ div#header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 10px;
+  background-color: #1e1e1e;
+  border-bottom: 1px solid #282828;
+  width: 100%;
+}
+
+div#sidebar {
+  position: fixed;
+  top: 11px;
+  left: 0px;
+  background-color: #425060;
+  background:url(../images/sidebar.png);
+  background-repeat: repeat-y;
+  width: 350px;
+  height: 100%;
+  border-right: 1px solid #282828;
+
+  h1 {
+    padding: 40px 10px 10px 0px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 35px;
+    line-height: 40px;
+    text-align: justify;
+    margin-left: 20px;
+    width: 80%;
+    color: #eee;
+    text-shadow: #333 -1px -1px 0;  
+}
+
+  h2 {
+    padding: 0px 80px 30px 20px;
+    color: #1e1e1e;
+    text-align: right;
+    font-size: 25px;
+    font-weight: normal;
+    text-shadow: #677f9a 1px 1px 0;  
+  }
+
+  p {
+    padding: 10px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: left;
+    margin: 0 auto;
+    width: 90%;
+    color: #1e1e1e;
+    text-shadow: #677f9a 1px 1px 0;
+    
+    a {
+     text-decoration: none;
+     color: #677f9a;
+     text-shadow: none;
+    } 
+   }
+  ul {
+    padding: 10px;
+    background-color: #1e1e1e;
+    @include box-shadow;
+
+    li {
+      display: inline;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      margin-left: 10px;
+      
+      &:hover {
+        margin-top: 1px;
+        }
+    }
+  }
+}
+
+div.wrapper {
+  width: 960px;
+  margin-left: 375px;
+}
+
+div#main {
+  color: #454545;
+  width: 700px;
+  float: left;
+  color: #454545;
+
+  h3 {
+    font-size: 35px;
+    font-family: arial, serif;
+    font-weight: normal;
+    padding: 40px 10px 0px;
+
+    a {
+      color: #677f9a;
+      text-decoration: none;
+
+      &:hover {
+        color: #718fb0;
+      }
+    }
+  }
+
+  h4 {
+    padding: 10px;
+    color: #1e1e1e;
+    font-weight: normal;
+    font-size: 12px;
+    border-bottom: 1px solid #707070;
+  }
+  p {
+    text-shadow: #F2F2F2 1px 1px 0;
+    padding: 10px;
+    color: #454545;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+div#other {
+  float: left;
+  width: 200px;
+  margin: 40px 20px 10px 25px;
+  min-height: 600px;
+  border-left: 1px solid #707070;
+  
+  h3 {
+   color: #677f9a;
+   padding: 25px;
+   font-size: 16px;
+   font-weight: normal;
+   font-family: arial, serif;
+  }
+} 
+
