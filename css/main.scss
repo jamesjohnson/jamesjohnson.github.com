@@ -22,14 +22,14 @@ div#sidebar {
   background-color: #425060;
   background:url(../images/sidebar.png);
   background-repeat: repeat-y;
-  width: 350px;
+  width: 300px;
   height: 100%;
   border-right: 1px solid #282828;
 
   h1 {
     padding: 40px 10px 10px 0px;
     font-family: Helvetica, Arial, sans-serif;
-    font-size: 35px;
+    font-size: 25px;
     line-height: 40px;
     text-align: justify;
     margin-left: 20px;
@@ -50,7 +50,7 @@ div#sidebar {
   p {
     padding: 10px;
     font-family: Helvetica, Arial, sans-serif;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 22px;
     text-align: left;
     margin: 0 auto;
@@ -67,7 +67,9 @@ div#sidebar {
   ul {
     padding: 10px;
     background-color: #1e1e1e;
-    @include box-shadow;
+    -moz-box-shadow: 3px 3px 5px rgba(0, 0, 0, .3);
+    -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, .3);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, .3);
 
     li {
       display: inline;
@@ -84,7 +86,7 @@ div#sidebar {
 
 div.wrapper {
   width: 960px;
-  margin-left: 375px;
+  margin-left: 325px;
 }
 
 div#main {
@@ -121,8 +123,8 @@ div#main {
     padding: 10px;
     color: #454545;
     font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 14px;
+    line-height: 22px;
   }
 }
 

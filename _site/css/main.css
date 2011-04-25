@@ -24,7 +24,7 @@ div#sidebar {
   background-color: #425060;
   background: url(../images/sidebar.png);
   background-repeat: repeat-y;
-  width: 350px;
+  width: 300px;
   height: 100%;
   border-right: 1px solid #282828;
 }
@@ -32,7 +32,7 @@ div#sidebar {
 div#sidebar h1 {
   padding: 40px 10px 10px 0px;
   font-family: Helvetica, Arial, sans-serif;
-  font-size: 35px;
+  font-size: 25px;
   line-height: 40px;
   text-align: justify;
   margin-left: 20px;
@@ -53,7 +53,7 @@ div#sidebar h2 {
 div#sidebar p {
   padding: 10px;
   font-family: Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 22px;
   text-align: left;
   margin: 0 auto;
@@ -71,53 +71,52 @@ div#sidebar p a {
 div#sidebar ul {
   padding: 10px;
   background-color: #1e1e1e;
-  -moz-box-shadow: #333333 1px 1px 5px 0;
-  -webkit-box-shadow: #333333 1px 1px 5px 0;
-  -o-box-shadow: #333333 1px 1px 5px 0;
-  box-shadow: #333333 1px 1px 5px 0;
+  -moz-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
 }
-/* line 72, main.scss */
+/* line 74, main.scss */
 div#sidebar ul li {
   display: inline;
   padding-top: 5px;
   padding-bottom: 5px;
   margin-left: 10px;
 }
-/* line 78, main.scss */
+/* line 80, main.scss */
 div#sidebar ul li:hover {
   margin-top: 1px;
 }
 
-/* line 85, main.scss */
+/* line 87, main.scss */
 div.wrapper {
   width: 960px;
-  margin-left: 375px;
+  margin-left: 325px;
 }
 
-/* line 90, main.scss */
+/* line 92, main.scss */
 div#main {
   color: #454545;
   width: 700px;
   float: left;
   color: #454545;
 }
-/* line 96, main.scss */
+/* line 98, main.scss */
 div#main h3 {
   font-size: 35px;
   font-family: arial, serif;
   font-weight: normal;
   padding: 40px 10px 0px;
 }
-/* line 102, main.scss */
+/* line 104, main.scss */
 div#main h3 a {
   color: #677f9a;
   text-decoration: none;
 }
-/* line 106, main.scss */
+/* line 108, main.scss */
 div#main h3 a:hover {
   color: #718fb0;
 }
-/* line 112, main.scss */
+/* line 114, main.scss */
 div#main h4 {
   padding: 10px;
   color: #1e1e1e;
@@ -125,17 +124,17 @@ div#main h4 {
   font-size: 12px;
   border-bottom: 1px solid #707070;
 }
-/* line 119, main.scss */
+/* line 121, main.scss */
 div#main p {
   text-shadow: #F2F2F2 1px 1px 0;
   padding: 10px;
   color: #454545;
   font-weight: normal;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 14px;
+  line-height: 22px;
 }
 
-/* line 129, main.scss */
+/* line 131, main.scss */
 div#other {
   float: left;
   width: 200px;
@@ -143,7 +142,7 @@ div#other {
   min-height: 600px;
   border-left: 1px solid #707070;
 }
-/* line 136, main.scss */
+/* line 138, main.scss */
 div#other h3 {
   color: #677f9a;
   padding: 25px;
