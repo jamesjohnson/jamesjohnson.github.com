@@ -3,7 +3,7 @@
  <title>James Johnson</title>
  <link href="http://jamesjohnson.me/atom.xml" rel="self"/>
  <link href="http://jamesjohnson.me/"/>
- <updated>2011-04-26T01:20:59-04:00</updated>
+ <updated>2011-04-26T01:31:57-04:00</updated>
  <id>http://jamesjohnson.me/</id>
  <author>
    <name>James Johnson</name>
@@ -16,8 +16,7 @@
    <link href="http://jamesjohnson.me/2011/04/23/ruby-on-rails-for-beginners.html"/>
    <updated>2011-04-23T00:00:00-04:00</updated>
    <id>http://jamesjohnson.me/2011/04/23/ruby-on-rails-for-beginners</id>
-   <content type="html">&lt;p&gt;H2. Ruby on Rails: Beginners Best Friend.&lt;/p&gt;
-&lt;p&gt;Learning to code is not easy. Like most things that are worth doing, it takes significant time, effort and suffering  to achieve a very basic level of competency. The biggest barrier I found in teaching myself was my own frustration and lack of progress. I have been doing this a little longer than a year, and it is interesting for me to look back on my progress. Early on there were some very basic problems that took weeks to figure out. It took me a while to come to terms with the fact that there was no easy way to do it.&lt;/p&gt;
+   <content type="html">&lt;p&gt;Learning to code is not easy. Like most things that are worth doing, it takes significant time, effort and suffering  to achieve a very basic level of competency. The biggest barrier I found in teaching myself was my own frustration and lack of progress. I have been doing this a little longer than a year, and it is interesting for me to look back on my progress. Early on there were some very basic problems that took weeks to figure out. It took me a while to come to terms with the fact that there was no easy way to do it.&lt;/p&gt;
 &lt;p&gt;I tried out a bit of php and python/django before jumping into Ruby on Rails. For someone in a position similar to me, I would highly recommend leaning Ruby on Rails if you are starting frmo scratch When I began I knew nothing, but I knew I was interested in buiding web based technology(like everyone else!). Rails made my life a &lt;i&gt;little&lt;/i&gt; bit easier for the following reasons:&lt;/p&gt;
 &lt;p&gt;1) Scaffolding &amp;#8211; I imagine it is rarely used by those who know what they are doing, I rarely use it now and still don&amp;#8217;t know what I am doing:), but scaffolding early on alowed me to experiment and learn code that already existed. Installing rails was pretty easy on ubuntu, and then all I had to do was run rails g scaffold Post name:string and I had a webapp! From there I had a framework in which I could learn the &lt;span class=&quot;caps&quot;&gt;CRUD&lt;/span&gt; (Create, Read, Update, Destory) processes very quickly.&lt;/p&gt;
 &lt;p&gt;2) Convention over Configuration &amp;#8211; Looking back now, I realize I spent &lt;i&gt;very&lt;/i&gt; little time actually leaning Ruby, almost all my effort was put into learning html/css/JS/rails routes/&lt;span class=&quot;caps&quot;&gt;MVC&lt;/span&gt; relationships/ and  configuring gems that handled the Ruby for me. This allowed me to build a site that &lt;strong&gt;looked&lt;/strong&gt; like something I wouldn&amp;#8217;t be embarrased to show to friends. That was huge for me at the time.&lt;/p&gt;
