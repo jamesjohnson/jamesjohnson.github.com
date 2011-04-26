@@ -126,6 +126,14 @@ div#main {
     font-size: 14px;
     line-height: 22px;
   }
+  a {
+    color: #677F9A;
+    text-decoration: none;
+    
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 div#other {

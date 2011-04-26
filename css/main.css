@@ -133,8 +133,17 @@ div#main p {
   font-size: 14px;
   line-height: 22px;
 }
+/* line 129, main.scss */
+div#main a {
+  color: #677F9A;
+  text-decoration: none;
+}
+/* line 133, main.scss */
+div#main a:hover {
+  text-decoration: underline;
+}
 
-/* line 131, main.scss */
+/* line 139, main.scss */
 div#other {
   float: left;
   width: 200px;
@@ -142,7 +151,7 @@ div#other {
   min-height: 600px;
   border-left: 1px solid #707070;
 }
-/* line 138, main.scss */
+/* line 146, main.scss */
 div#other h3 {
   color: #677f9a;
   padding: 25px;
