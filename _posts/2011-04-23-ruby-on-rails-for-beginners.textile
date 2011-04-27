@@ -1,6 +1,6 @@
 ---
 layout: post
-title:Ruby on Rails: Beginners Best Friend
+title: "Ruby on Rails: Beginners Best Friend"
 ---
 
 Learning to code is not easy. Like most things that are worth doing, it takes significant time, effort and suffering  to achieve a very basic level of competency. The biggest barrier I found in teaching myself was my own frustration and lack of progress. I have been doing this a little longer than a year, and it is interesting for me to look back on my progress. Early on there were some very basic problems that took weeks to figure out. It took me a while to come to terms with the fact that there was no easy way to do it. 
