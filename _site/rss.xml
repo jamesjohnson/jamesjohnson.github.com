@@ -4,21 +4,54 @@
  <title>James Johnson's Blog</title>
  <link>http://jamesjohnson.me</link>
  <description>James Johnson's Blog</description>
- <updated>2011-04-26T01:31:57-04:00</updated>
+ <updated>2011-10-04T16:44:26-04:00</updated>
  <copyright>Copyright 2010, James Johnson</copyright>
  <language>en-us</language>
  <docs>http://validator.w3.org/feed/docs/rss2.html</docs>
 
  
  <item>
-   <title>Ruby On Rails For Beginners</title>
+   <title>What Up Biz Guy - Build you first webapp</title>
+   <author>James Johnson</author>
+   <pubDate>2011-10-05T00:00:00-04:00</pubDate>
+   <link>http://jamesjohnson.me/2011/10/05/beginners-guide-to-programming.html</link>
+   <guid>http://jamesjohnson.me/2011/10/05/beginners-guide-to-programming</guid>
+   <description>&lt;p&gt;A lot of friends have asked me recently how I learned web development. The short answer is with a lot of help, but if you are interested in the specifics, I hope the below helps!&lt;/p&gt;
+&lt;p&gt;I was a History major in college and the most &amp;#8220;programming related&amp;#8221; class I took was the lowest level of Math offered. After graduating school I worked at a &lt;a href='www.yourenew.com'&gt;startup&lt;/a&gt; and caught the technology bug. I have no special skills, no education and no tricks other than some really awesome/smart friends who helped me learn to build stuff. The below guideline is aimed to get you up to speed as quickly as possible on the basics of webdevelopment. At least, this is how I did it. I promise you if you spend &amp;gt; 4 hours a day for the next 6 months working on some of the resource listed below, you will be able to build a basic website.&lt;/p&gt;
+&lt;p&gt;1) The PC has gotta go &amp;#8211; Finding people who can help you is really important, and in my experience less people can help you working on a PC. Go on eBay or on the Apple refurbished store. I got the rolls royce of used computers&amp;#8230; the 27inch iMac for $1300, but you can get a $400-500 mac no problemo. It is a lot of money, but if you are serious about development its completely worth it. The other option is wiping your PC and installing &lt;a href=''&gt;ubuntu&lt;/a&gt;. If you need your PC for work/other things this may not be a realistic option.&lt;/p&gt;
+&lt;p&gt;2) The Terminal &amp;#8211; You can search for this on a Mac using spotlight. Open it up and type in ls. This will list everything in your directory. This is exactly the same as clicking on my computer and seeing all the file names. Instead of clicking however, you type in cd directoryname/ to go &amp;#8220;into&amp;#8221; a directory- If this is confusing google cd and cd .. (moving back) &amp;#8211; you will figure it out :). Learn more about terminal commands &lt;a href=''&gt;here&lt;/a&gt;. Web developers spend all their time in the terminal and in the text editor&amp;#8230;&lt;/p&gt;
+&lt;p&gt;3) Install a text-editor &amp;#8211; I did trial by fire with an awesome program called gvim (now using mvim). I knew the commands for save :w, quit :q, and insert mode i &amp;#8211; I got by on these for a good 2 months. This isn&amp;#8217;t completely necessary, as textmate is a much more beginner friendly option. Install either of these. If you decide on mvim &amp;#8211; check out &lt;a href=''&gt;this&lt;/a&gt; demo.&lt;/p&gt;
+&lt;p&gt;5) Before you start building, here is a quick overview of what you will build.&lt;br /&gt;
+		a) A Database &amp;#8211; A lot of people use &lt;span class=&quot;caps&quot;&gt;SQL&lt;/span&gt; (sqlite, postgresql, mysql) but there are also other options that are becoming more and more popular. Stick to &lt;span class=&quot;caps&quot;&gt;SQL&lt;/span&gt; to start because its easy to understand the basic concepts. &lt;a href=''&gt;Here&lt;/a&gt; is a great overview, but I always think of it like a big excel table with columns you can&amp;#8217;t easily change. Each row in the column is what you are either Creating, Reading, Updating or Destroying&lt;/p&gt;
+&lt;p&gt;b) The &amp;#8220;Front End&amp;#8221; &amp;#8211; Two languages make up the basics of front end of the website:&lt;br /&gt;
+				i) &lt;span class=&quot;caps&quot;&gt;HTML&lt;/span&gt; &amp;#8211; The &amp;#8220;tags&amp;#8221; that you use to structure your pages. &lt;a href=''&gt;Here&lt;/a&gt; is a great overview of html&lt;br /&gt;
+				ii) &lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt; &amp;#8211; You apply a &lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt; Rule to an &lt;span class=&quot;caps&quot;&gt;HTML&lt;/span&gt; tag. &lt;a href=''&gt;This&lt;/a&gt; is a good overview, it also has a demo you can practice with. Do not expect to pick it up immediately, but with time you will pick it up eventually.&lt;/p&gt;
+&lt;p&gt;c) The Scripting language &amp;#8211; It is the piece that connects the front end (the way the site looks) to the database. This part of the site is the &amp;#8220;Ruby on Rails&amp;#8221; or the &amp;#8220;Python&amp;#8221; the &amp;#8220;&lt;span class=&quot;caps&quot;&gt;PHP&lt;/span&gt;&amp;#8221; &amp;#8211; there are a lot of options here for getting started, but if you want to build a website Ruby on Rails is the most beginner friendly &lt;span class=&quot;caps&quot;&gt;IMO&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;6) On a mac &amp;#8211; download a program called &lt;a href=''&gt;homebrew&lt;/a&gt; &amp;#8211; it will help you install stuff in a really easy way.&lt;/p&gt;
+&lt;p&gt;7) Run the following commands in your terminal. You can copy and paste the following right in there using command-c &amp;#8211; homebrew intall ruby, homebrew install rails,  &amp;#8211; You now have Ruby on Rails set up. Lets get you your first web app&lt;/p&gt;
+&lt;p&gt;8) Run the following command &amp;#8211; &lt;br /&gt;
+			- rails new blog (you just created your first webapp)&lt;br /&gt;
+			- cd blog (press enter and you will &amp;#8216;click&amp;#8217; on that directory)&lt;/p&gt;
+&lt;p&gt;9) Now watch this &lt;a href=''&gt;screencast&lt;/a&gt;&amp;#8230; Run the commands as they are run in the video. Once you are done you will have built your first webapp, and will be 3 months ahead of me when I started.&lt;/p&gt;
+&lt;p&gt;10) Where from here? Come up with a project idea, figure out the different pages/functionality you need &amp;#8211; Have a look at &lt;a href=''&gt;Ryan Bates&lt;/a&gt; Screencasts and see if anything he is doing could help you. When you get errors, or get stuck, the best places to ask for help are on &lt;a href=''&gt;Stackoverflow&lt;/a&gt; and then you can always type errors into &lt;a href=''&gt;Google&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;11) The website is now running, How do I put it online? &lt;a href=''&gt;Heroku&lt;/a&gt; makes it easy to get a website up quickly. You need to intall &lt;a href=''&gt;git&lt;/a&gt; and also &lt;a href=''&gt;read&lt;/a&gt; a lot about it. The basic concept is this. For your purposes you need to do the following things:&lt;br /&gt;
+		i) From the terminal home &amp;#8211; gem install heroku&lt;br /&gt;
+    ii) git add .&lt;br /&gt;
+    iii) git commit -m &amp;#8220;first commit&amp;#8221;&lt;br /&gt;
+    iv) git push heroku master&lt;/p&gt;
+&lt;p&gt;12) If you made it to the end and some/any/all of these steps worked out for you, then you have probably caught the &amp;#8220;building things&amp;#8221; virus and you will probably have to quit your job to start hacking the dream. I strongly recommend it.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://twitter.com/jamesjohnsona&quot;&gt;Following or @ me on Twitter if you have any questions or comments!&lt;/a&gt;&lt;/p&gt;</description>
+ </item>
+ 
+ <item>
+   <title>Ruby on Rails: Beginners Best Friend</title>
    <author>James Johnson</author>
    <pubDate>2011-04-23T00:00:00-04:00</pubDate>
    <link>http://jamesjohnson.me/2011/04/23/ruby-on-rails-for-beginners.html</link>
    <guid>http://jamesjohnson.me/2011/04/23/ruby-on-rails-for-beginners</guid>
    <description>&lt;p&gt;Learning to code is not easy. Like most things that are worth doing, it takes significant time, effort and suffering  to achieve a very basic level of competency. The biggest barrier I found in teaching myself was my own frustration and lack of progress. I have been doing this a little longer than a year, and it is interesting for me to look back on my progress. Early on there were some very basic problems that took weeks to figure out. It took me a while to come to terms with the fact that there was no easy way to do it.&lt;/p&gt;
 &lt;p&gt;I tried out a bit of php and python/django before jumping into Ruby on Rails. For someone in a position similar to me, I would highly recommend leaning Ruby on Rails if you are starting frmo scratch When I began I knew nothing, but I knew I was interested in buiding web based technology(like everyone else!). Rails made my life a &lt;i&gt;little&lt;/i&gt; bit easier for the following reasons:&lt;/p&gt;
-&lt;p&gt;1) Scaffolding &amp;#8211; I imagine it is rarely used by those who know what they are doing, I rarely use it now and still don&amp;#8217;t know what I am doing:), but scaffolding early on alowed me to experiment and learn code that already existed. Installing rails was pretty easy on ubuntu, and then all I had to do was run rails g scaffold Post name:string and I had a webapp! From there I had a framework in which I could learn the &lt;span class=&quot;caps&quot;&gt;CRUD&lt;/span&gt; (Create, Read, Update, Destory) processes very quickly.&lt;/p&gt;
+&lt;p&gt;1) Scaffolding &amp;#8211; I imagine it is rarely used by those who know what they are doing, I rarely use it now and still don&amp;#8217;t know what I am doing:)- but scaffolding early on allowed me to experiment and learn code that already existed. Installing rails was pretty easy on ubuntu, and then all I had to do was run rails g scaffold Post name:string and I had a webapp! From there I had a framework in which I could learn the &lt;span class=&quot;caps&quot;&gt;CRUD&lt;/span&gt; (Create, Read, Update, Destory) processes very quickly.&lt;/p&gt;
 &lt;p&gt;2) Convention over Configuration &amp;#8211; Looking back now, I realize I spent &lt;i&gt;very&lt;/i&gt; little time actually leaning Ruby, almost all my effort was put into learning html/css/JS/rails routes/&lt;span class=&quot;caps&quot;&gt;MVC&lt;/span&gt; relationships/ and  configuring gems that handled the Ruby for me. This allowed me to build a site that &lt;strong&gt;looked&lt;/strong&gt; like something I wouldn&amp;#8217;t be embarrased to show to friends. That was huge for me at the time.&lt;/p&gt;
 &lt;p&gt;3) Documentation &amp;#8211; Even now when I read python or django documentation for some projects I work on, it overwhelms me. The documentation at &lt;a href=&quot;rubyonrails.org&quot;&gt;rubyonrails.org&lt;/a&gt; is &lt;u&gt;so&lt;/u&gt; easy to follow along with. Again from someone who has no formal or informal background in development, something like this can make a huge decision when fighting against your own frustration to give up.&lt;/p&gt;
 &lt;p&gt;4)Railscasts &amp;#8211; Not even sure what can be said about this. I used to be cool but now I spend Saturday nights watching them. Thank you Ryan Bates. Watching &lt;a href=&quot;http://railscasts.org&quot;&gt;Railscast&lt;/a&gt; videos are inspiring because Ryan has such a fantastic way of teaching. Every step is covered and so long as you have Ruby installed and bundler set up correctly &amp;#8211; you can have prety much no idea what you are doing and recreate most of what is covered.&lt;/p&gt;

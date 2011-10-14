@@ -1,13 +1,12 @@
-@charset "UTF-8";
 /* line 3, main.scss */
 body {
-  background-color: #eee;
+  background-color: #fff;
   font-family: Helvetica, Arial, sans-serif;
 }
 
 /* line 8, main.scss */
 div#header {
-  position: fixed;
+  position: relative;
   top: 0px;
   left: 0px;
   height: 10px;
@@ -17,37 +16,33 @@ div#header {
 }
 
 /* line 18, main.scss */
-div#sidebar {
-  position: fixed;
-  top: 11px;
+div#navbar {
+  position: relative;
+  top: 0px;
   left: 0px;
-  background-color: #425060;
-  background: url(../images/sidebar.png);
-  background-repeat: repeat-y;
-  width: 300px;
-  height: 100%;
+  background-color: #900;
+  width: 100%;
+  height: 80px;
   border-right: 1px solid #282828;
 }
-/* line 29, main.scss */
-div#sidebar h1 {
-  padding: 40px 10px 10px 0px;
-  font-size: 25px;
+/* line 27, main.scss */
+div#navbar h1 {
+  font-size: 40px;
   line-height: 40px;
-  text-align: justify;
+  position: absolute;
+  left: 0px;
+  top: 20px;
   margin-left: 20px;
-  width: 80%;
-  color: #eee;
 }
-/* line 38, main.scss */
-div#sidebar h1 a {
+/* line 35, main.scss */
+div#navbar h1 a {
   text-decoration: none;
-  color: #eee;
+  text-shadow: black -1px -1px 0;
+  color: #fff;
   font-family: Helvetica, Arial, sans-serif;
-  font-size: 25px;
-  text-shadow: #333333 -1px -1px 0;
 }
-/* line 47, main.scss */
-div#sidebar h2 {
+/* line 43, main.scss */
+div#navbar h2 {
   padding: 0px 80px 30px 20px;
   color: #1e1e1e;
   text-align: right;
@@ -55,74 +50,72 @@ div#sidebar h2 {
   font-weight: normal;
   text-shadow: #677f9a 1px 1px 0;
 }
-/* line 56, main.scss */
-div#sidebar p {
+/* line 52, main.scss */
+div#navbar p {
   padding: 10px;
   font-family: Helvetica, Arial, sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 22px;
   text-align: left;
   margin: 0 auto;
   width: 90%;
   color: #1e1e1e;
-  text-shadow: #677f9a 1px 1px 0;
 }
-/* line 67, main.scss */
-div#sidebar p a {
+/* line 62, main.scss */
+div#navbar p a {
   text-decoration: none;
-  color: #677f9a;
+  color: #eee;
   text-shadow: none;
 }
-/* line 73, main.scss */
-div#sidebar ul {
-  padding: 10px;
-  background-color: #1e1e1e;
-  -moz-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
-  -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+/* line 69, main.scss */
+div#navbar ul {
+  position: absolute;
+  right: 0px;
+  top: 30px;
 }
-/* line 80, main.scss */
-div#sidebar ul li {
+/* line 74, main.scss */
+div#navbar ul li {
   display: inline;
   padding-top: 5px;
   padding-bottom: 5px;
   margin-left: 10px;
 }
-/* line 86, main.scss */
-div#sidebar ul li:hover {
+/* line 80, main.scss */
+div#navbar ul li:hover {
   margin-top: 1px;
 }
 
-/* line 93, main.scss */
+/* line 87, main.scss */
 div.wrapper {
+  position: relative;
   width: 960px;
-  margin-left: 325px;
+  margin: 0 auto;
 }
 
-/* line 98, main.scss */
+/* line 93, main.scss */
 div#main {
   color: #454545;
   width: 700px;
   float: left;
   color: #454545;
 }
-/* line 104, main.scss */
+/* line 99, main.scss */
 div#main h3 {
   font-size: 35px;
   font-family: arial, serif;
   font-weight: normal;
   padding: 40px 10px 0px;
 }
-/* line 110, main.scss */
+/* line 105, main.scss */
 div#main h3 a {
   color: #677f9a;
   text-decoration: none;
 }
-/* line 114, main.scss */
+/* line 109, main.scss */
 div#main h3 a:hover {
   color: #718fb0;
 }
-/* line 120, main.scss */
+/* line 115, main.scss */
 div#main h4 {
   padding: 10px;
   color: #1e1e1e;
@@ -130,7 +123,7 @@ div#main h4 {
   font-size: 12px;
   border-bottom: 1px solid #707070;
 }
-/* line 127, main.scss */
+/* line 122, main.scss */
 div#main p {
   text-shadow: #F2F2F2 1px 1px 0;
   padding: 10px;
@@ -139,17 +132,17 @@ div#main p {
   font-size: 14px;
   line-height: 22px;
 }
-/* line 135, main.scss */
+/* line 130, main.scss */
 div#main a {
   color: #677F9A;
   text-decoration: none;
 }
-/* line 139, main.scss */
+/* line 134, main.scss */
 div#main a:hover {
   text-decoration: underline;
 }
 
-/* line 145, main.scss */
+/* line 140, main.scss */
 div#other {
   float: left;
   width: 200px;
@@ -157,7 +150,7 @@ div#other {
   min-height: 600px;
   border-left: 1px solid #707070;
 }
-/* line 152, main.scss */
+/* line 147, main.scss */
 div#other h3 {
   color: #677f9a;
   padding: 25px;

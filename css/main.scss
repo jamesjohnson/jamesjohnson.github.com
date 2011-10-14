@@ -1,12 +1,12 @@
 @import "compass/css3";
 
 body {
-  background-color: #eee;
+  background-color: #fff;
   font-family: Helvetica, Arial, sans-serif;
 }
 
  div#header {
-  position: fixed;
+  position: relative;
   top: 0px;
   left: 0px;
   height: 10px;
@@ -15,32 +15,28 @@ body {
   width: 100%;
 }
 
-div#sidebar {
-  position: fixed;
-  top: 11px;
+div#navbar {
+  position: relative;
+  top: 0px;
   left: 0px;
-  background-color: #425060;
-  background:url(../images/sidebar.png);
-  background-repeat: repeat-y;
-  width: 300px;
-  height: 100%;
+  background-color: #900;
+  width: 100%;
+  height: 80px;
   border-right: 1px solid #282828;
 
   h1 {
-    padding: 40px 10px 10px 0px;
-    font-size: 25px;
+    font-size: 40px;
     line-height: 40px;
-    text-align: justify;
+    position: absolute;
+    left: 0px;
+    top: 20px;
     margin-left: 20px;
-    width: 80%;
-    color: #eee;
    
     a {
       text-decoration: none;
-      color: #eee;
+      @include single-text-shadow(#000, -1px, -1px, 0);
+      color: #fff;
       font-family: Helvetica, Arial, sans-serif;
-      font-size: 25px;
-      text-shadow: #333 -1px -1px 0; 
     }
   }
 
@@ -62,7 +58,6 @@ div#sidebar {
     margin: 0 auto;
     width: 90%;
     color: #1e1e1e;
-    text-shadow: #677f9a 1px 1px 0;
     
     a {
      text-decoration: none;
@@ -70,12 +65,11 @@ div#sidebar {
      text-shadow: none;
     } 
    }
+
   ul {
-    padding: 10px;
-    background-color: #1e1e1e;
-    -moz-box-shadow: 3px 3px 5px rgba(0, 0, 0, .3);
-    -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, .3);
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, .3);
+    position: absolute;
+    right: 0px;
+    top: 30px;
 
     li {
       display: inline;
@@ -91,8 +85,9 @@ div#sidebar {
 }
 
 div.wrapper {
+  position: relative;
   width: 960px;
-  margin-left: 325px;
+  margin: 0 auto;
 }
 
 div#main {
