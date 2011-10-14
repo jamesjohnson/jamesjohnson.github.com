@@ -3,7 +3,7 @@ layout: post
 title: "Rails - Take the First Step"
 ---
 
-I learned ruby on rails with no background in programming about 18 months ago. The "hardest" part for me looking back on my experience was the first couple of weeks. For someone who is new to development, text editors and the terminal - the installation process can be really overwhelming. When there is an application you can make changes to and build on, its much easier to stick with it, but getting set up I have to imagine is where most people give up. The following is not going to explain the steps, rather will just give explicit instructions for probably the most confusing part of the process. Once you have reached step 10, there are plenty of resources and guides for continuing to move forward.
+I learned ruby on rails with no background in programming about 18 months ago. The "hardest" part for me looking back on my experience was the first couple of weeks. For someone who is new to development, text editors and the terminal - the installation process can be really overwhelming. When there is an application you can make changes to and build on, its much easier to stick with it. The following is not going to fully explain the steps (which at some point will be important to understand). Instead I tried to give explicit instructions for probably the most confusing part of the web development process. If you work/are interested in technology and were not sure how to get started, this is for you!
 
 1) This won't work on a PC and the process is a little different for Ubuntu(which I first started on). You can buy used macbooks on eBay pretty cheap, or dualboot your PC with Ubuntu. I had someone who knew what they were doing help me with the latter when I started - but I do think a Mac is the best option.
 
@@ -77,4 +77,20 @@ and generate some scaffolding code, migrate the database, and start the server (
 <code>rake db:migrate</code>
 <code>rails s</code>
 
-10)Now check out the following url to see your VERY first rails app: <a href='http://0.0.0.0:3000/posts'>http://0.0.0.0:3000/posts</a>
+10)Now check out the following url to see your first rails app: <a href='http://0.0.0.0:3000/posts'>http://0.0.0.0:3000/posts</a>.
+
+Next steps are checking out the following guides and resources:
+
+<a href='http://guides.rubyonrails.org/'>Rails Guide</a>: Read through as much as you possibly can.
+<a href='http://railscasts.com/'>Railscasts</a>: Watch the lessons and try to copy, these helped me the most as I learned
+<a href='http://stackoverflow.com/'>Stackoverflow</a>: Ask and search for questions you have here.
+
+Your first question is probably how do I edit stuff? You can use vim to open up any of the files in application you just made. For example
+
+<code>vim app/views/posts/index.html.erb</code> 
+
+This will open the index file and you can play around with changing words e.t.c.
+
+Have fun and good luck!
+
+questions? <a href='twitter.com/jamesjohnsona'>@jamesjohnsona</a>

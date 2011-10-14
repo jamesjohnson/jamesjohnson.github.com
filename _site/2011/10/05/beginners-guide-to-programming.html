@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <title>What Up Biz Guy - Build you first webapp</title>
+    <title>Rails - Take the First Step</title>
     <meta name="author" content="James Johnson" />
     <meta name="title" content="" />
     <meta property="og:title" content="" />
@@ -36,9 +36,8 @@
   </h3>
   <h4><span class='date'> Written on  by James</span></h4>
       
-      <div id='body' class='entry-content instapaper_body'><p>I learned the basics of web programming about 18 months ago building a small <span class="caps">PHP</span> app that tracked returns for a startup I was working for. It was fun, but after I built a basic <span class="caps">CRUD</span> interface, I found it hard to move past the initial phases. I got some advice that Ruby on Rails was a great way to keep moving forward, and so I spent 8 months building simple webapps using the rails framework. The &#8220;hardest&#8221; part for me looking back on my experience was the first couple of weeks. For someone who is new to development, text editors and the terminal &#8211; the installation process can be really overwhelming.</p>
-<p>Recently a lot of my buddies have asked me to get them set up with Rails so that they can learn to build cool stuff, and I always laugh that what takes 15 minutes now, took me a good 2-3 weeks the first time I went through it. I will do my best to outline below <span class="caps">EXACTLY</span> what it takes to get the most basic of webapps set up. Once you have a webapp, you can read the scaffold code from the views, controllers and models, and get sense for how a Ruby on Rails app works.</p>
-<p>1) This won&#8217;t work on a PC and the process is a little different for Ubuntu(which I got set up on). You can buy used macbooks on eBay pretty cheap, or dualboot your PC with Ubuntu. I had someone who knew what they were doing help me with the latter when I started &#8211; but I do think a Mac is the best option.</p>
+      <div id='body' class='entry-content instapaper_body'><p>I learned ruby on rails with no background in programming about 18 months ago. The &#8220;hardest&#8221; part for me looking back on my experience was the first couple of weeks. For someone who is new to development, text editors and the terminal &#8211; the installation process can be really overwhelming. When there is an application you can make changes to and build on, its much easier to stick with it. The following is not going to fully explain the steps (which at some point will be important to understand). Instead I tried to give explicit instructions for probably the most confusing part of the web development process. If you work/are interested in technology and were not sure how to get started, this is for you!</p>
+<p>1) This won&#8217;t work on a PC and the process is a little different for Ubuntu(which I first started on). You can buy used macbooks on eBay pretty cheap, or dualboot your PC with Ubuntu. I had someone who knew what they were doing help me with the latter when I started &#8211; but I do think a Mac is the best option.</p>
 <p>2) Install X-Code in the App Store. If you have the Lion operating system installed, its free, otherwise you will need to Download it from Apple.com and it costs ~$5 I think &#8211; Lion is great and $29 so I would advise downloading Lion. You can also get Lion in the App store.<br />
 <img src='/images/posts/learning_rails/xcode.png' /></p>
 <p>3) Once X-code is installed &#8211; next step is installing homebrew. The homebrew githib is <a href='https://github.com/mxcl/homebrew/wiki/installation'>here.</a> All you need to do is open your terminal from spotlight.<br />
@@ -84,7 +83,16 @@ Again there will be a bunch of output, but there shouldn&#8217;t be any issues w
 <code>rails g scaffold post title:string body:text published:boolean</code><br />
 <code>rake db:migrate</code><br />
 <code>rails s</code></p>
-<p>10)Now check out the following url to see your <span class="caps">VERY</span> first rails app: <a href='http://0.0.0.0:3000/posts'>http://0.0.0.0:3000/posts</a></p></div>
+<p>10)Now check out the following url to see your first rails app: <a href='http://0.0.0.0:3000/posts'>http://0.0.0.0:3000/posts</a>.</p>
+<p>Next steps are checking out the following guides and resources:</p>
+<p><a href='http://guides.rubyonrails.org/'>Rails Guide</a>: Read through as much as you possibly can.<br />
+<a href='http://railscasts.com/'>Railscasts</a>: Watch the lessons and try to copy, these helped me the most as I learned<br />
+<a href='http://stackoverflow.com/'>Stackoverflow</a>: Ask and search for questions you have here.</p>
+<p>Your first question is probably how do I edit stuff? You can use vim to open up any of the files in application you just made. For example</p>
+<p><code>vim app/views/posts/index.html</code></p>
+<p>This will open the index file and you can play around with changing words e.t.c.</p>
+<p>Have fun and good luck!</p>
+<p>questions? <a href='twitter.com/jamesjohnsona'>@jamesjohnsona</a></p></div>
     </div>
     
   <div id="other">
