@@ -3,7 +3,7 @@
  <title>James Johnson</title>
  <link href="http://jamesjohnson.me/atom.xml" rel="self"/>
  <link href="http://jamesjohnson.me/"/>
- <updated>2011-10-04T16:44:26-04:00</updated>
+ <updated>2011-10-14T16:09:30-04:00</updated>
  <id>http://jamesjohnson.me/</id>
  <author>
    <name>James Johnson</name>
@@ -16,31 +16,55 @@
    <link href="http://jamesjohnson.me/2011/10/05/beginners-guide-to-programming.html"/>
    <updated>2011-10-05T00:00:00-04:00</updated>
    <id>http://jamesjohnson.me/2011/10/05/beginners-guide-to-programming</id>
-   <content type="html">&lt;p&gt;A lot of friends have asked me recently how I learned web development. The short answer is with a lot of help, but if you are interested in the specifics, I hope the below helps!&lt;/p&gt;
-&lt;p&gt;I was a History major in college and the most &amp;#8220;programming related&amp;#8221; class I took was the lowest level of Math offered. After graduating school I worked at a &lt;a href='www.yourenew.com'&gt;startup&lt;/a&gt; and caught the technology bug. I have no special skills, no education and no tricks other than some really awesome/smart friends who helped me learn to build stuff. The below guideline is aimed to get you up to speed as quickly as possible on the basics of webdevelopment. At least, this is how I did it. I promise you if you spend &amp;gt; 4 hours a day for the next 6 months working on some of the resource listed below, you will be able to build a basic website.&lt;/p&gt;
-&lt;p&gt;1) The PC has gotta go &amp;#8211; Finding people who can help you is really important, and in my experience less people can help you working on a PC. Go on eBay or on the Apple refurbished store. I got the rolls royce of used computers&amp;#8230; the 27inch iMac for $1300, but you can get a $400-500 mac no problemo. It is a lot of money, but if you are serious about development its completely worth it. The other option is wiping your PC and installing &lt;a href=''&gt;ubuntu&lt;/a&gt;. If you need your PC for work/other things this may not be a realistic option.&lt;/p&gt;
-&lt;p&gt;2) The Terminal &amp;#8211; You can search for this on a Mac using spotlight. Open it up and type in ls. This will list everything in your directory. This is exactly the same as clicking on my computer and seeing all the file names. Instead of clicking however, you type in cd directoryname/ to go &amp;#8220;into&amp;#8221; a directory- If this is confusing google cd and cd .. (moving back) &amp;#8211; you will figure it out :). Learn more about terminal commands &lt;a href=''&gt;here&lt;/a&gt;. Web developers spend all their time in the terminal and in the text editor&amp;#8230;&lt;/p&gt;
-&lt;p&gt;3) Install a text-editor &amp;#8211; I did trial by fire with an awesome program called gvim (now using mvim). I knew the commands for save :w, quit :q, and insert mode i &amp;#8211; I got by on these for a good 2 months. This isn&amp;#8217;t completely necessary, as textmate is a much more beginner friendly option. Install either of these. If you decide on mvim &amp;#8211; check out &lt;a href=''&gt;this&lt;/a&gt; demo.&lt;/p&gt;
-&lt;p&gt;5) Before you start building, here is a quick overview of what you will build.&lt;br /&gt;
-		a) A Database &amp;#8211; A lot of people use &lt;span class=&quot;caps&quot;&gt;SQL&lt;/span&gt; (sqlite, postgresql, mysql) but there are also other options that are becoming more and more popular. Stick to &lt;span class=&quot;caps&quot;&gt;SQL&lt;/span&gt; to start because its easy to understand the basic concepts. &lt;a href=''&gt;Here&lt;/a&gt; is a great overview, but I always think of it like a big excel table with columns you can&amp;#8217;t easily change. Each row in the column is what you are either Creating, Reading, Updating or Destroying&lt;/p&gt;
-&lt;p&gt;b) The &amp;#8220;Front End&amp;#8221; &amp;#8211; Two languages make up the basics of front end of the website:&lt;br /&gt;
-				i) &lt;span class=&quot;caps&quot;&gt;HTML&lt;/span&gt; &amp;#8211; The &amp;#8220;tags&amp;#8221; that you use to structure your pages. &lt;a href=''&gt;Here&lt;/a&gt; is a great overview of html&lt;br /&gt;
-				ii) &lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt; &amp;#8211; You apply a &lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt; Rule to an &lt;span class=&quot;caps&quot;&gt;HTML&lt;/span&gt; tag. &lt;a href=''&gt;This&lt;/a&gt; is a good overview, it also has a demo you can practice with. Do not expect to pick it up immediately, but with time you will pick it up eventually.&lt;/p&gt;
-&lt;p&gt;c) The Scripting language &amp;#8211; It is the piece that connects the front end (the way the site looks) to the database. This part of the site is the &amp;#8220;Ruby on Rails&amp;#8221; or the &amp;#8220;Python&amp;#8221; the &amp;#8220;&lt;span class=&quot;caps&quot;&gt;PHP&lt;/span&gt;&amp;#8221; &amp;#8211; there are a lot of options here for getting started, but if you want to build a website Ruby on Rails is the most beginner friendly &lt;span class=&quot;caps&quot;&gt;IMO&lt;/span&gt;.&lt;/p&gt;
-&lt;p&gt;6) On a mac &amp;#8211; download a program called &lt;a href=''&gt;homebrew&lt;/a&gt; &amp;#8211; it will help you install stuff in a really easy way.&lt;/p&gt;
-&lt;p&gt;7) Run the following commands in your terminal. You can copy and paste the following right in there using command-c &amp;#8211; homebrew intall ruby, homebrew install rails,  &amp;#8211; You now have Ruby on Rails set up. Lets get you your first web app&lt;/p&gt;
-&lt;p&gt;8) Run the following command &amp;#8211; &lt;br /&gt;
-			- rails new blog (you just created your first webapp)&lt;br /&gt;
-			- cd blog (press enter and you will &amp;#8216;click&amp;#8217; on that directory)&lt;/p&gt;
-&lt;p&gt;9) Now watch this &lt;a href=''&gt;screencast&lt;/a&gt;&amp;#8230; Run the commands as they are run in the video. Once you are done you will have built your first webapp, and will be 3 months ahead of me when I started.&lt;/p&gt;
-&lt;p&gt;10) Where from here? Come up with a project idea, figure out the different pages/functionality you need &amp;#8211; Have a look at &lt;a href=''&gt;Ryan Bates&lt;/a&gt; Screencasts and see if anything he is doing could help you. When you get errors, or get stuck, the best places to ask for help are on &lt;a href=''&gt;Stackoverflow&lt;/a&gt; and then you can always type errors into &lt;a href=''&gt;Google&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;11) The website is now running, How do I put it online? &lt;a href=''&gt;Heroku&lt;/a&gt; makes it easy to get a website up quickly. You need to intall &lt;a href=''&gt;git&lt;/a&gt; and also &lt;a href=''&gt;read&lt;/a&gt; a lot about it. The basic concept is this. For your purposes you need to do the following things:&lt;br /&gt;
-		i) From the terminal home &amp;#8211; gem install heroku&lt;br /&gt;
-    ii) git add .&lt;br /&gt;
-    iii) git commit -m &amp;#8220;first commit&amp;#8221;&lt;br /&gt;
-    iv) git push heroku master&lt;/p&gt;
-&lt;p&gt;12) If you made it to the end and some/any/all of these steps worked out for you, then you have probably caught the &amp;#8220;building things&amp;#8221; virus and you will probably have to quit your job to start hacking the dream. I strongly recommend it.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://twitter.com/jamesjohnsona&quot;&gt;Following or @ me on Twitter if you have any questions or comments!&lt;/a&gt;&lt;/p&gt;</content>
+   <content type="html">&lt;p&gt;I learned the basics of web programming about 18 months ago building a small &lt;span class=&quot;caps&quot;&gt;PHP&lt;/span&gt; app that tracked returns for a startup I was working for. It was fun, but after I built a basic &lt;span class=&quot;caps&quot;&gt;CRUD&lt;/span&gt; interface, I found it hard to move past the initial phases. I got some advice that Ruby on Rails was a great way to keep moving forward, and so I spent 8 months building simple webapps using the rails framework. The &amp;#8220;hardest&amp;#8221; part for me looking back on my experience was the first couple of weeks. For someone who is new to development, text editors and the terminal &amp;#8211; the installation process can be really overwhelming.&lt;/p&gt;
+&lt;p&gt;Recently a lot of my buddies have asked me to get them set up with Rails so that they can learn to build cool stuff, and I always laugh that what takes 15 minutes now, took me a good 2-3 weeks the first time I went through it. I will do my best to outline below &lt;span class=&quot;caps&quot;&gt;EXACTLY&lt;/span&gt; what it takes to get the most basic of webapps set up. Once you have a webapp, you can read the scaffold code from the views, controllers and models, and get sense for how a Ruby on Rails app works.&lt;/p&gt;
+&lt;p&gt;1) This won&amp;#8217;t work on a PC and the process is a little different for Ubuntu(which I got set up on). You can buy used macbooks on eBay pretty cheap, or dualboot your PC with Ubuntu. I had someone who knew what they were doing help me with the latter when I started &amp;#8211; but I do think a Mac is the best option.&lt;/p&gt;
+&lt;p&gt;2) Install X-Code in the App Store. If you have the Lion operating system installed, its free, otherwise you will need to Download it from Apple.com and it costs ~$5 I think &amp;#8211; Lion is great and $29 so I would advise downloading Lion. You can also get Lion in the App store.&lt;br /&gt;
+&lt;img src='/images/posts/learning_rails/xcode.png' /&gt;&lt;/p&gt;
+&lt;p&gt;3) Once X-code is installed &amp;#8211; next step is installing homebrew. The homebrew githib is &lt;a href='https://github.com/mxcl/homebrew/wiki/installation'&gt;here.&lt;/a&gt; All you need to do is open your terminal from spotlight.&lt;br /&gt;
+&lt;img src='/images/posts/learning_rails/spotlight.png' /&gt;&lt;br /&gt;
+and copy and paste in the following command:&lt;br /&gt;
+&lt;br/&gt;
+&lt;code&gt;/usr/bin/ruby -e &quot;$(curl -fsSL https://raw.github.com/gist/323731)&quot;&lt;/code&gt;&lt;br /&gt;
+&lt;br/&gt;
+It should look something like this:&lt;br /&gt;
+&lt;img src='/images/posts/learning_rails/terminal.png' /&gt;&lt;br /&gt;
+From here you should see a bunch of output. If there are any points where you are asked a question, just hit enter.&lt;/p&gt;
+&lt;p&gt;4) After x-code is installed &amp;#8211; its time to install git. This is really easy to do with the homebrew install. In the same way that you copy and pasted the homebrew install, you copy and paste the following line of code which will install git.&lt;br /&gt;
+&lt;br/&gt;
+&lt;code&gt;brew install git&lt;/code&gt;&lt;br /&gt;
+&lt;br/&gt;
+Again there will be a bunch of output, but there shouldn&amp;#8217;t be any issues with the install&lt;/p&gt;
+&lt;p&gt;5) Next step is installing &lt;span class=&quot;caps&quot;&gt;RVM&lt;/span&gt; &amp;#8211; this is a ruby tool that makes managing different versions of ruby much easier. When I started this was really confusing for me, so don&amp;#8217;t worry about it too much right now. If you would like to read up on &lt;span class=&quot;caps&quot;&gt;RVM&lt;/span&gt; (which you should!) the link is  &lt;a href='http://beginrescueend.com/'&gt;here.&lt;/a&gt; To install &lt;span class=&quot;caps&quot;&gt;RVM&lt;/span&gt; copy and paste the following (same as before) into the terminal.&lt;br /&gt;
+&lt;br/&gt;
+&lt;code&gt;bash &amp;lt; &amp;lt;(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer)&lt;/code&gt;&lt;br /&gt;
+&lt;br/&gt;&lt;/p&gt;
+&lt;p&gt;6) This is the most complicated part of the install for a new user, you need to add &lt;span class=&quot;caps&quot;&gt;RVM&lt;/span&gt; to your path so that you can access it everytime you use the terminal. This is done by creating or adding to an existing .bashrc file. In your terminal copy and paste the following:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;vim ~/.bashrc&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;You are using a texteditor that allows you to edit files. Vim has a series of commands that are great for developers but hard for a first timer to pick up. &lt;/p&gt;
+&lt;p&gt;If there is code existing in this file, use the down arrow (note left and right won&amp;#8217;t work) go to the bottom of the file and press the letter &lt;span class='light'&gt;i&lt;/span&gt; once. Go to the end of the line using the arrow keys and hit enter to go onto a new line. If you make a mistake at any point. Hit the &lt;span class='light'&gt;esc&lt;/span&gt; key and press &lt;span class='light'&gt;u&lt;/span&gt;. Once at the bottom of the file, paste on a new line the following code:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;[[ -s $HOME/.rvm/scripts/rvm ]] &amp;amp;&amp;amp; . $HOME/.rvm/scripts/rvm&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Once the code is there press the &lt;span class='light'&gt;esc&lt;/span&gt; key, then type in the following &lt;span class='light'&gt;:wq&lt;/span&gt;. the &lt;span class='light'&gt;:wq&lt;/span&gt; should show up in the bottom nav of the program, you should not be typing this into the file itself. &lt;span class='light'&gt;:w&lt;/span&gt; is the command to save a file in vim and &lt;span class='light'&gt;:q&lt;/span&gt; is the command to quit, together they will save and quit. When you type &lt;span class='light'&gt;:wq&lt;/span&gt; it will save the ~/.bashrc file and exit.&lt;/p&gt;
+&lt;p&gt;&lt;img src='/images/posts/learning_rails/bashrc.png' /&gt;&lt;/p&gt;
+&lt;p&gt;7)After adding &lt;span class=&quot;caps&quot;&gt;RVM&lt;/span&gt; to the path, you will need to exit out of the terminal and reopen it. Next step is to install ruby and then rails! To do so, copy and paste in the following commands to the terminal:&lt;/p&gt;
+&lt;p&gt;This will install Ruby&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;rvm install ruby-1.9.2-p290&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Once it is done installing you need to tell &lt;span class=&quot;caps&quot;&gt;RVM&lt;/span&gt; that you would like to use Ruby 1.9.2&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;rvm use 1.9.2&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;You should get a green confirm message that this worked, next time to install Rails. First confirm gems are updated and then install rails.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;gem update --system&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;gem install rails&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;8)You won&amp;#8217;t need this right away, but to use 3rd party libraries (called gems in rails) you should install bundler now. Really helpful way to manage 3rd party software you applications will rely on.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;gem install bundler&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;9)Now create your first rails app! &lt;br /&gt;
+&lt;code&gt;rails new blog&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;and then type in the following to &amp;#8220;change directory&amp;#8221; into your new application. Imagine that CD is the same as using a mouse to click on a directory to view its files. cd is the same concept.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;cd blog&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;and generate some scaffolding code, migrate the database, and start the server (this will create your first app!):&lt;br /&gt;
+&lt;code&gt;rails g scaffold post title:string body:text published:boolean&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;rake db:migrate&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;rails s&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;10)Now check out the following url to see your &lt;span class=&quot;caps&quot;&gt;VERY&lt;/span&gt; first rails app: &lt;a href='http://0.0.0.0:3000/posts'&gt;http://0.0.0.0:3000/posts&lt;/a&gt;&lt;/p&gt;</content>
  </entry>
  
  <entry>

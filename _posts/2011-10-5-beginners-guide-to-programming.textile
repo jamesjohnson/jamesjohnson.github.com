@@ -1,47 +1,80 @@
 ---
 layout: post
-title: "What Up Biz Guy - Build you first webapp"
+title: "Rails - Take the First Step"
 ---
 
-A lot of friends have asked me recently how I learned web development. The short answer is with a lot of help, but if you are interested in the specifics, I hope the below helps!
+I learned ruby on rails with no background in programming about 18 months ago. The "hardest" part for me looking back on my experience was the first couple of weeks. For someone who is new to development, text editors and the terminal - the installation process can be really overwhelming. When there is an application you can make changes to and build on, its much easier to stick with it, but getting set up I have to imagine is where most people give up. The following is not going to explain the steps, rather will just give explicit instructions for probably the most confusing part of the process. Once you have reached step 10, there are plenty of resources and guides for continuing to move forward.
 
-I was a History major in college and the most "programming related" class I took was the lowest level of Math offered. After graduating school I worked at a <a href='www.yourenew.com'>startup</a> and caught the technology bug. I have no special skills, no education and no tricks other than some really awesome/smart friends who helped me learn to build stuff. The below guideline is aimed to get you up to speed as quickly as possible on the basics of webdevelopment. At least, this is how I did it. I promise you if you spend > 4 hours a day for the next 6 months working on some of the resource listed below, you will be able to build a basic website.
+1) This won't work on a PC and the process is a little different for Ubuntu(which I first started on). You can buy used macbooks on eBay pretty cheap, or dualboot your PC with Ubuntu. I had someone who knew what they were doing help me with the latter when I started - but I do think a Mac is the best option.
 
-1) The PC has gotta go - Finding people who can help you is really important, and in my experience less people can help you working on a PC. Go on eBay or on the Apple refurbished store. I got the rolls royce of used computers... the 27inch iMac for $1300, but you can get a $400-500 mac no problemo. It is a lot of money, but if you are serious about development its completely worth it. The other option is wiping your PC and installing <a href=''>ubuntu</a>. If you need your PC for work/other things this may not be a realistic option.
+2) Install X-Code in the App Store. If you have the Lion operating system installed, its free, otherwise you will need to Download it from Apple.com and it costs ~$5 I think - Lion is great and $29 so I would advise downloading Lion. You can also get Lion in the App store.
+<img src='/images/posts/learning_rails/xcode.png' />
 
-2) The Terminal - You can search for this on a Mac using spotlight. Open it up and type in ls. This will list everything in your directory. This is exactly the same as clicking on my computer and seeing all the file names. Instead of clicking however, you type in cd directoryname/ to go "into" a directory- If this is confusing google cd and cd .. (moving back) - you will figure it out :). Learn more about terminal commands <a href=''>here</a>. Web developers spend all their time in the terminal and in the text editor...
+3) Once X-code is installed - next step is installing homebrew. The homebrew githib is <a href='https://github.com/mxcl/homebrew/wiki/installation'>here.</a> All you need to do is open your terminal from spotlight.
+<img src='/images/posts/learning_rails/spotlight.png' />
+and copy and paste in the following command:
+<br/>
+<code>/usr/bin/ruby -e "$(curl -fsSL https://raw.github.com/gist/323731)"</code>
+<br/>
+It should look something like this:
+<img src='/images/posts/learning_rails/terminal.png' />
+From here you should see a bunch of output. If there are any points where you are asked a question, just hit enter.
 
-3) Install a text-editor - I did trial by fire with an awesome program called gvim (now using mvim). I knew the commands for save :w, quit :q, and insert mode i - I got by on these for a good 2 months. This isn't completely necessary, as textmate is a much more beginner friendly option. Install either of these. If you decide on mvim - check out <a href=''>this</a> demo.
+4) After x-code is installed - its time to install git. This is really easy to do with the homebrew install. In the same way that you copy and pasted the homebrew install, you copy and paste the following line of code which will install git.
+<br/>
+<code>brew install git</code>
+<br/>
+Again there will be a bunch of output, but there shouldn't be any issues with the install
 
-5) Before you start building, here is a quick overview of what you will build.
-		a) A Database - A lot of people use SQL (sqlite, postgresql, mysql) but there are also other options that are becoming more and more popular. Stick to SQL to start because its easy to understand the basic concepts. <a href=''>Here</a> is a great overview, but I always think of it like a big excel table with columns you can't easily change. Each row in the column is what you are either Creating, Reading, Updating or Destroying 
+5) Next step is installing RVM - this is a ruby tool that makes managing different versions of ruby much easier. When I started this was really confusing for me, so don't worry about it too much right now. If you would like to read up on RVM (which you should!) the link is  <a href='http://beginrescueend.com/'>here.</a> To install RVM copy and paste the following (same as before) into the terminal.
+<br/>
+<code>bash < <(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer)</code>
+<br/>
 
-		b) The "Front End" - Two languages make up the basics of front end of the website:
-				i) HTML - The "tags" that you use to structure your pages. <a href=''>Here</a> is a great overview of html
-				ii) CSS - You apply a CSS Rule to an HTML tag. <a href=''>This</a> is a good overview, it also has a demo you can practice with. Do not expect to pick it up immediately, but with time you will pick it up eventually. 
+6) This is the most complicated part of the install for a new user, you need to add RVM to your path so that you can access it everytime you use the terminal. This is done by creating or adding to an existing .bashrc file. In your terminal copy and paste the following:
 
-		c) The Scripting language - It is the piece that connects the front end (the way the site looks) to the database. This part of the site is the "Ruby on Rails" or the "Python" the "PHP" - there are a lot of options here for getting started, but if you want to build a website Ruby on Rails is the most beginner friendly IMO.
+<code>vim ~/.bashrc</code>
 
-6) On a mac - download a program called <a href=''>homebrew</a> - it will help you install stuff in a really easy way.
+You are using a texteditor that allows you to edit files. Vim has a series of commands that are great for developers but hard for a first timer to pick up. <a href='http://yannesposito.com/Scratch/en/blog/Learn-Vim-Progressively/>Here</a> is a great tutorial - definitely worth checking out.
 
-7) Run the following commands in your terminal. You can copy and paste the following right in there using command-c - homebrew intall ruby, homebrew install rails,  - You now have Ruby on Rails set up. Lets get you your first web app
+If there is code existing in this file, use the down arrow (note left and right won't work) go to the bottom of the file and press the letter <span class='light'>i</span> once. Go to the end of the line using the arrow keys and hit enter to go onto a new line. If you make a mistake at any point. Hit the <span class='light'>esc</span> key and press <span class='light'>u</span>. Once at the bottom of the file, paste on a new line the following code:
 
-8) Run the following command - 
-			- rails new blog (you just created your first webapp)
-			- cd blog (press enter and you will 'click' on that directory)
+<code>[[ -s $HOME/.rvm/scripts/rvm ]] && . $HOME/.rvm/scripts/rvm</code>
 
-9) Now watch this <a href=''>screencast</a>... Run the commands as they are run in the video. Once you are done you will have built your first webapp, and will be 3 months ahead of me when I started. 
+Once the code is there press the <span class='light'>esc</span> key, then type in the following <span class='light'>:wq</span>. the <span class='light'>:wq</span> should show up in the bottom nav of the program, you should not be typing this into the file itself. <span class='light'>:w</span> is the command to save a file in vim and <span class='light'>:q</span> is the command to quit, together they will save and quit. When you type <span class='light'>:wq</span> it will save the ~/.bashrc file and exit.
 
-10) Where from here? Come up with a project idea, figure out the different pages/functionality you need - Have a look at <a href=''>Ryan Bates</a> Screencasts and see if anything he is doing could help you. When you get errors, or get stuck, the best places to ask for help are on <a href=''>Stackoverflow</a> and then you can always type errors into <a href=''>Google</a>.
+<img src='/images/posts/learning_rails/bashrc.png' />
 
-11) The website is now running, How do I put it online? <a href=''>Heroku</a> makes it easy to get a website up quickly. You need to intall <a href=''>git</a> and also <a href=''>read</a> a lot about it. The basic concept is this. For your purposes you need to do the following things:
-		i) From the terminal home - gem install heroku
-    ii) git add .
-    iii) git commit -m "first commit"
-    iv) git push heroku master
+7)After adding RVM to the path, you will need to exit out of the terminal and reopen it. Next step is to install ruby and then rails! To do so, copy and paste in the following commands to the terminal:
 
-12) If you made it to the end and some/any/all of these steps worked out for you, then you have probably caught the "building things" virus and you will probably have to quit your job to start hacking the dream. I strongly recommend it. 
+This will install Ruby 
 
-<a href="http://twitter.com/jamesjohnsona">Following or @ me on Twitter if you have any questions or comments!</a>
+<code>rvm install ruby-1.9.2-p290</code>
 
+Once it is done installing you need to tell RVM that you would like to use Ruby 1.9.2
 
+<code>rvm use 1.9.2</code>
+
+You should get a green confirm message that this worked, next time to install Rails. First confirm gems are updated and then install rails.
+
+<code>gem update --system</code>
+
+<code>gem install rails</code>
+
+8)You won't need this right away, but to use 3rd party libraries (called gems in rails) you should install bundler now. Really helpful way to manage 3rd party software you applications will rely on.
+
+<code>gem install bundler</code>
+
+9)Now create your first rails app! 
+<code>rails new blog</code>
+
+and then type in the following to "change directory" into your new application. Imagine that CD is the same as using a mouse to click on a directory to view its files. cd is the same concept. 
+
+<code>cd blog</code>
+
+and generate some scaffolding code, migrate the database, and start the server (this will create your first app!):
+<code>rails g scaffold post title:string body:text published:boolean</code>
+<code>rake db:migrate</code>
+<code>rails s</code>
+
+10)Now check out the following url to see your VERY first rails app: <a href='http://0.0.0.0:3000/posts'>http://0.0.0.0:3000/posts</a>

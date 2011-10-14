@@ -133,16 +133,20 @@ div#main p {
   line-height: 22px;
 }
 /* line 130, main.scss */
+div#main p img {
+  margin: 20px auto;
+}
+/* line 135, main.scss */
 div#main a {
   color: #677F9A;
   text-decoration: none;
 }
-/* line 134, main.scss */
+/* line 139, main.scss */
 div#main a:hover {
   text-decoration: underline;
 }
 
-/* line 140, main.scss */
+/* line 145, main.scss */
 div#other {
   float: left;
   width: 200px;
@@ -150,11 +154,37 @@ div#other {
   min-height: 600px;
   border-left: 1px solid #707070;
 }
-/* line 147, main.scss */
+/* line 152, main.scss */
 div#other h3 {
   color: #677f9a;
   padding: 25px;
   font-size: 16px;
   font-weight: normal;
   font-family: arial, serif;
+}
+
+/* line 161, main.scss */
+code {
+  background-color: #eee;
+  width: auto;
+  width: 650px;
+  overflow: auto;
+  border: 1px solid #bbb;
+  padding: 5px 10px;
+  font-size: 14px;
+  font-weight: normal;
+  position: relative;
+  color: #000;
+  display: block;
+}
+
+/* line 175, main.scss */
+span.light {
+  background-color: #eee;
+  overflow: auto;
+  padding: 5px 3px;
+  font-size: 14px;
+  font-weight: normal;
+  position: relative;
+  color: #000;
 }

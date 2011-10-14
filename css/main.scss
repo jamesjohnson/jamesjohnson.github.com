@@ -126,7 +126,12 @@ div#main {
     font-weight: normal;
     font-size: 14px;
     line-height: 22px;
+
+    img {
+      margin: 20px auto;
+    }
   }
+
   a {
     color: #677F9A;
     text-decoration: none;
@@ -153,3 +158,26 @@ div#other {
   }
 } 
 
+code {
+  background-color: #eee;
+  width: auto;
+  width: 650px;
+  overflow: auto;
+  border: 1px solid #bbb;
+  padding: 5px 10px;
+  font-size: 14px;
+  font-weight: normal;
+  position: relative;
+  color: #000;
+  display:block
+}
+
+span.light {
+  background-color: #eee;
+  overflow: auto;
+  padding: 5px 3px;
+  font-size: 14px;
+  font-weight: normal;
+  position: relative;
+  color: #000;
+}
