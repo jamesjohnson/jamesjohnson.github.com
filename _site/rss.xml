@@ -4,7 +4,7 @@
  <title>James Johnson's Blog</title>
  <link>http://jamesjohnson.me</link>
  <description>James Johnson's Blog</description>
- <updated>2011-10-14T16:32:35-04:00</updated>
+ <updated>2011-10-14T17:15:40-04:00</updated>
  <copyright>Copyright 2010, James Johnson</copyright>
  <language>en-us</language>
  <docs>http://validator.w3.org/feed/docs/rss2.html</docs>
@@ -16,7 +16,7 @@
    <pubDate>2011-10-05T00:00:00-04:00</pubDate>
    <link>http://jamesjohnson.me/2011/10/05/beginners-guide-to-programming.html</link>
    <guid>http://jamesjohnson.me/2011/10/05/beginners-guide-to-programming</guid>
-   <description>&lt;p&gt;I learned ruby on rails with no background in programming about 18 months ago. The &amp;#8220;hardest&amp;#8221; part for me looking back on my experience was the first couple of weeks. For someone who is new to development, text editors and the terminal &amp;#8211; the installation process can be really overwhelming. When there is an application you can make changes to and build on, its much easier to stick with it. The following is not going to fully explain the steps (which at some point will be important to understand). Instead I tried to give explicit instructions for probably the most confusing part of the web development process. If you work/are interested in technology and were not sure how to get started, this is for you!&lt;/p&gt;
+   <description>&lt;p&gt;A few of my friends with no technical background have recently become interested in learning web development. I usually point them towards Ruby on Rails, mainly because I found it to be the most beginner friendly approach. After a few days however, they usually come back asking for advice on the install. Each of them has struggled a lot with the installation process and thinking back to my first experience, I remember how difficult I found it. For someone who is new to development, text editors and the terminal &amp;#8211; the installation process can be really overwhelming. When there is an application you can make changes to and build on, its much easier to stick with it. The following is not going to fully explain the steps (which at some point will be important to understand). Instead I tried to give explicit instructions for creating a working rails environment. If you work/are interested in technology and were not sure how to get started, this is for you!&lt;/p&gt;
 &lt;p&gt;1) This won&amp;#8217;t work on a PC and the process is a little different for Ubuntu(which I first started on). You can buy used macbooks on eBay pretty cheap, or dualboot your PC with Ubuntu. I had someone who knew what they were doing help me with the latter when I started &amp;#8211; but I do think a Mac is the best option.&lt;/p&gt;
 &lt;p&gt;2) Install X-Code in the App Store. If you have the Lion operating system installed, its free, otherwise you will need to Download it from Apple.com and it costs ~$5 I think &amp;#8211; Lion is great and $29 so I would advise downloading Lion. You can also get Lion in the App store.&lt;br /&gt;
 &lt;img src='/images/posts/learning_rails/xcode.png' /&gt;&lt;/p&gt;
@@ -69,7 +69,7 @@ Again there will be a bunch of output, but there shouldn&amp;#8217;t be any issu
 &lt;a href='http://railscasts.com/'&gt;Railscasts&lt;/a&gt;: Watch the lessons and try to copy, these helped me the most as I learned&lt;br /&gt;
 &lt;a href='http://stackoverflow.com/'&gt;Stackoverflow&lt;/a&gt;: Ask and search for questions you have here.&lt;/p&gt;
 &lt;p&gt;Your first question is probably how do I edit stuff? You can use vim to open up any of the files in application you just made. For example&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;vim app/views/posts/index.html&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;vim app/views/posts/index.html.erb&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;This will open the index file and you can play around with changing words e.t.c.&lt;/p&gt;
 &lt;p&gt;Have fun and good luck!&lt;/p&gt;
 &lt;p&gt;questions? &lt;a href='twitter.com/jamesjohnsona'&gt;@jamesjohnsona&lt;/a&gt;&lt;/p&gt;</description>
