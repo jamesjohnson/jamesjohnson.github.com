@@ -31,9 +31,13 @@ div#navbar {
     a {
       text-decoration: none;
       font-weight: bold;
-      @include single-text-shadow(#fff, 1px, 1px, 0);
+      @include single-text-shadow(#fff, 3px, 3px, 0);
       color: #900;
       font-family: Helvetica, Arial, sans-serif;
+
+      &:hover {
+        color: #600;
+      }
     }
   }
 

@@ -34,11 +34,15 @@ div#navbar h1 {
 div#navbar h1 a {
   text-decoration: none;
   font-weight: bold;
-  text-shadow: white 1px 1px 0;
+  text-shadow: white 3px 3px 0;
   color: #900;
   font-family: Helvetica, Arial, sans-serif;
 }
-/* line 40, main.scss */
+/* line 38, main.scss */
+div#navbar h1 a:hover {
+  color: #600;
+}
+/* line 44, main.scss */
 div#navbar h2 {
   color: #525252;
   font-size: 17px;
@@ -48,7 +52,7 @@ div#navbar h2 {
   font-weight: normal;
   text-shadow: white 1px 1px 0;
 }
-/* line 50, main.scss */
+/* line 54, main.scss */
 div#navbar p {
   padding: 10px;
   font-family: Helvetica, Arial, sans-serif;
@@ -59,38 +63,38 @@ div#navbar p {
   width: 90%;
   color: #1e1e1e;
 }
-/* line 60, main.scss */
+/* line 64, main.scss */
 div#navbar p a {
   text-decoration: none;
   color: #eee;
   text-shadow: none;
 }
-/* line 67, main.scss */
+/* line 71, main.scss */
 div#navbar ul {
   position: absolute;
   left: -13px;
   top: 56px;
 }
-/* line 72, main.scss */
+/* line 76, main.scss */
 div#navbar ul li {
   display: inline;
   padding-top: 5px;
   padding-bottom: 5px;
   margin-left: 10px;
 }
-/* line 78, main.scss */
+/* line 82, main.scss */
 div#navbar ul li:hover {
   margin-top: 1px;
 }
 
-/* line 85, main.scss */
+/* line 89, main.scss */
 div.wrapper {
   position: relative;
   width: 700px;
   margin: 0 auto;
 }
 
-/* line 91, main.scss */
+/* line 95, main.scss */
 div#main {
   color: #454545;
   width: 700px;
@@ -108,23 +112,23 @@ div#main {
   border-radius: 10px;
   border: 1px solid #ccc;
 }
-/* line 103, main.scss */
+/* line 107, main.scss */
 div#main h3 {
   font-size: 20px;
   font-family: arial, serif;
   font-weight: normal;
   padding: 0px 10px;
 }
-/* line 109, main.scss */
+/* line 113, main.scss */
 div#main h3 a {
   color: #666;
   text-decoration: none;
 }
-/* line 113, main.scss */
+/* line 117, main.scss */
 div#main h3 a:hover {
   color: #888;
 }
-/* line 119, main.scss */
+/* line 123, main.scss */
 div#main h4 {
   padding: 10px;
   color: #fff;
@@ -141,7 +145,7 @@ div#main h4 {
   border-radius: 4px;
   font-size: 12px;
 }
-/* line 130, main.scss */
+/* line 134, main.scss */
 div#main p {
   text-shadow: #fff 1px 1px 0;
   padding: 10px;
@@ -150,28 +154,28 @@ div#main p {
   font-size: 14px;
   line-height: 22px;
 }
-/* line 138, main.scss */
+/* line 142, main.scss */
 div#main p img {
   margin: 20px auto 0px;
 }
-/* line 143, main.scss */
+/* line 147, main.scss */
 div#main a {
   color: #677F9A;
   text-decoration: none;
 }
-/* line 147, main.scss */
+/* line 151, main.scss */
 div#main a:hover {
   text-decoration: underline;
 }
 
-/* line 153, main.scss */
+/* line 157, main.scss */
 div#other {
   float: left;
   width: 150px;
   margin: 40px 20px 10px 25px;
   min-height: 600px;
 }
-/* line 159, main.scss */
+/* line 163, main.scss */
 div#other h3 {
   color: #677f9a;
   padding: 25px;
@@ -180,7 +184,7 @@ div#other h3 {
   font-family: arial, serif;
 }
 
-/* line 168, main.scss */
+/* line 172, main.scss */
 code {
   background-color: #eee;
   width: auto;
@@ -195,7 +199,7 @@ code {
   display: block;
 }
 
-/* line 182, main.scss */
+/* line 186, main.scss */
 span.light {
   background-color: #eee;
   overflow: auto;
