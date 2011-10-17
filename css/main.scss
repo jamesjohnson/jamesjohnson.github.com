@@ -1,8 +1,8 @@
 @import "compass/css3";
 
 body {
-  background-color: #fff;
-  font-family: Helvetica, Arial, sans-serif;
+  background-color: #eee;
+  font-family: Helvetica Neue, Arial, sans-serif;
 }
 
  div#header {
@@ -11,7 +11,6 @@ body {
   left: 0px;
   height: 10px;
   background-color: #1e1e1e;
-  border-bottom: 1px solid #282828;
   width: 100%;
 }
 
@@ -19,34 +18,33 @@ div#navbar {
   position: relative;
   top: 0px;
   left: 0px;
-  background-color: #900;
   width: 100%;
   height: 80px;
-  border-right: 1px solid #282828;
 
   h1 {
-    font-size: 40px;
+    font-size: 34px;
     line-height: 40px;
     position: absolute;
     left: 0px;
-    top: 20px;
-    margin-left: 20px;
+    top: 8px;
    
     a {
       text-decoration: none;
-      @include single-text-shadow(#000, -1px, -1px, 0);
-      color: #fff;
+      font-weight: bold;
+      @include single-text-shadow(#fff, 1px, 1px, 0);
+      color: #900;
       font-family: Helvetica, Arial, sans-serif;
     }
   }
 
   h2 {
-    padding: 0px 80px 30px 20px;
-    color: #1e1e1e;
-    text-align: right;
-    font-size: 25px;
+    color: #525252;
+    font-size: 17px;
+    position: absolute;
+    top: 15px;
+    left: 120px;
     font-weight: normal;
-    text-shadow: #677f9a 1px 1px 0;  
+    @include single-text-shadow(#fff, 1px, 1px, 0);
   }
 
   p {
@@ -68,8 +66,8 @@ div#navbar {
 
   ul {
     position: absolute;
-    right: 0px;
-    top: 30px;
+    left: -13px;
+    top: 56px;
 
     li {
       display: inline;
@@ -86,49 +84,59 @@ div#navbar {
 
 div.wrapper {
   position: relative;
-  width: 960px;
+  width: 700px;
   margin: 0 auto;
 }
 
 div#main {
   color: #454545;
   width: 700px;
+  position: relative;
+  margin: 30px auto;
+  padding: 30px;
   float: left;
   color: #454545;
+  background-color: #fff;
+  @include border-radius(10px);
+  border: 1px solid #ccc;
 
   h3 {
-    font-size: 35px;
+    font-size: 20px;
     font-family: arial, serif;
     font-weight: normal;
-    padding: 40px 10px 0px;
+    padding: 0px 10px;
 
     a {
-      color: #677f9a;
+      color: #666;
       text-decoration: none;
 
       &:hover {
-        color: #718fb0;
+        color: #888;
       }
     }
   }
 
   h4 {
     padding: 10px;
-    color: #1e1e1e;
-    font-weight: normal;
+    color: #fff;
+    font-weight: bold;
+    background-color: #ccc;
+    display:inline;
+    margin-left: 10px;
+    padding: 3px 10px;
+    @include border-radius(4px);
     font-size: 12px;
-    border-bottom: 1px solid #707070;
   }
   p {
-    text-shadow: #F2F2F2 1px 1px 0;
+    text-shadow: #fff 1px 1px 0;
     padding: 10px;
-    color: #454545;
+    color: #1e1e1e;
     font-weight: normal;
     font-size: 14px;
     line-height: 22px;
 
     img {
-      margin: 20px auto;
+      margin: 20px auto 0px;
     }
   }
 
@@ -144,10 +152,9 @@ div#main {
 
 div#other {
   float: left;
-  width: 200px;
+  width: 150px;
   margin: 40px 20px 10px 25px;
   min-height: 600px;
-  border-left: 1px solid #707070;
   
   h3 {
    color: #677f9a;
