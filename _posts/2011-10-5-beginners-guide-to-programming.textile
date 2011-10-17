@@ -93,4 +93,4 @@ This will open the index file and you can play around with changing words etc.
 
 Have fun and good luck!
 
-questions? <a href='twitter.com/jamesjohnsona'>@jamesjohnsona</a>
+questions? <a href='http://twitter.com/jamesjohnsona'>@jamesjohnsona</a>
