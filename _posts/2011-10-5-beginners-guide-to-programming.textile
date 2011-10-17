@@ -9,10 +9,10 @@ The following is not going to fully explain the steps (which at some point will 
 
 1) This tutorial won't work on a PC and the process is a little different for Ubuntu (which I first started on). You can buy used macbooks on eBay pretty cheap, or dualboot your PC with Ubuntu. I had someone who knew what they were doing help me with the latter when I started - but I do think a Mac is the easiest option.
 
-2) Install xCode in the app store. If you have the Lion operating system installed, it's free. You can also get Lion in the app store.
+2) Install Xcode in the app store. If you have the Lion operating system installed, it's free. You can also get Lion in the app store.
 <img src='/images/posts/learning_rails/xcode.png' />
 
-3) Once XCode is installed - next step is installing homebrew. The homebrew github is <a href='https://github.com/mxcl/homebrew/wiki/installation'>here.</a> All you need to do is open your terminal from Spotlight.
+3) Once Xcode is installed - next step is installing homebrew. The homebrew github is <a href='https://github.com/mxcl/homebrew/wiki/installation'>here.</a> All you need to do is open your terminal from Spotlight.
 <img src='/images/posts/learning_rails/spotlight.png' />
 and copy and paste in the following command:
 
@@ -22,11 +22,11 @@ It should look something like this:
 <img src='/images/posts/learning_rails/terminal.png' />
 From here you should see a bunch of output. If there are any points where you are asked a question, just hit enter.
 
-4) After xCode is installed - its time to install git. This is really easy to do with the homebrew install. In the same way that you copy and pasted the homebrew install, you copy and paste the following line of code which will install git.
+4) After Xcode is installed - its time to install git. This is really easy to do with the homebrew install. In the same way that you copy and pasted the homebrew install, you copy and paste the following line of code which will install git.
 
 <code>brew install git</code>
 
-Again there will be a bunch of output, but there shouldn't be any issues with the install
+Again there will be a bunch of output, but there shouldn't be any issues with the install.
 
 5) Next step is installing RVM - this is a ruby tool that makes managing different versions of ruby much easier. When I started this was really confusing for me, so don't worry about it too much right now. If you would like to read up on RVM (which you should!) the link is  <a href='http://beginrescueend.com/'>here.</a> To install RVM copy and paste the following (same as before) into the terminal.
 <code>bash < <(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer)</code>
@@ -35,9 +35,9 @@ Again there will be a bunch of output, but there shouldn't be any issues with th
 
 <code>vim ~/.bashrc</code>
 
-You are using a texteditor that allows you to edit files. Vim has a series of commands that are great for developers but hard for a first timer to pick up. <a href='http://yannesposito.com/Scratch/en/blog/Learn-Vim-Progressively/>Here</a> is a great tutorial - definitely worth checking out.
+You are using a text editor that allows you to edit files. Vim has a series of commands that are great for developers but hard for a first timer to pick up. <a href='http://yannesposito.com/Scratch/en/blog/Learn-Vim-Progressively/>Here</a> is a great tutorial - definitely worth checking out.
 
-If there is code existing in this file, use the down arrow go to the bottom of the file and press the letter <span class='light'>i</span> once you get there. Go to the end of the line using the arrow keys and hit enter to go onto a new line. If you make a mistake at any point. Hit the <span class='light'>esc</span> key and press <span class='light'>u</span>. Once at the bottom of the file, paste on a new line the following code:
+If there is code existing in this file, use the down arrow go to the bottom of the file and press the letter <span class='light'>o</span>. If you make a mistake at any point. Hit the <span class='light'>esc</span> key and press <span class='light'>u</span>(<span class='light'>u</span> will undo your changes). Once at the bottom of the file, after pressing <span class='light'>o</span>, paste on a new line the following code:
 
 <code>[[ -s $HOME/.rvm/scripts/rvm ]] && . $HOME/.rvm/scripts/rvm</code>
 
