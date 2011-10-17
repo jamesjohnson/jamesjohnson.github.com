@@ -45,11 +45,17 @@ Once the code is there press the <span class='light'>esc</span> key, then type i
 
 <img src='/images/posts/learning_rails/bashrc.png' />
 
+
+
 7) After adding RVM to the path, you will need to exit out of the terminal and reopen it. Next step is to install Ruby and then Rails! To do so, copy and paste in the following commands to the terminal:
 
 This will install Ruby 
 
 <code>rvm install ruby-1.9.2-p290</code>
+
+If you see the following error: "rvm: command not found" - paste the following into the console and retry:
+
+<code>source ~/.bashrc</code>
 
 Once it is done installing you need to tell RVM that you would like to use Ruby 1.9.2
 
