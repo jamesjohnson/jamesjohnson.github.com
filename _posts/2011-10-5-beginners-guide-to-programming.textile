@@ -37,7 +37,7 @@ Again there will be a bunch of output, but there shouldn't be any issues with th
 
 You are using a text editor that allows you to edit files. Vim has a series of commands that are great for developers but hard for a first timer to pick up. <a href='http://yannesposito.com/Scratch/en/blog/Learn-Vim-Progressively/>Here</a> is a great tutorial - definitely worth checking out.
 
-If there is code existing in this file, use the down arrow go to the bottom of the file and press the letter <span class='light'>o</span>. If you make a mistake at any point. Hit the <span class='light'>esc</span> key and press <span class='light'>u</span>(<span class='light'>u</span> will undo your changes). Once at the bottom of the file, after pressing <span class='light'>o</span>, paste on a new line the following code:
+If there is code existing in this file, use the down arrow go to the bottom of the file and press the letter <span class='light'>o</span>. If you make a mistake at any point. Hit the <span class='light'>esc</span> key and press <span class='light'>u</span> (<span class='light'>u</span> will undo your changes). Once at the bottom of the file, after pressing <span class='light'>o</span>, paste on a new line the following code:
 
 <code>[[ -s $HOME/.rvm/scripts/rvm ]] && . $HOME/.rvm/scripts/rvm</code>
 
@@ -45,7 +45,7 @@ Once the code is there press the <span class='light'>esc</span> key, then type i
 
 <img src='/images/posts/learning_rails/bashrc.png' />
 
-7)After adding RVM to the path, you will need to exit out of the terminal and reopen it. Next step is to install ruby and then rails! To do so, copy and paste in the following commands to the terminal:
+7) After adding RVM to the path, you will need to exit out of the terminal and reopen it. Next step is to install Ruby and then Rails! To do so, copy and paste in the following commands to the terminal:
 
 This will install Ruby 
 
@@ -55,17 +55,17 @@ Once it is done installing you need to tell RVM that you would like to use Ruby 
 
 <code>rvm use 1.9.2</code>
 
-You should get a green confirm message that this worked, next time to install Rails. First confirm gems are updated and then install rails.
+You should get a green confirm message that this worked, next time to install Rails. First confirm gems are updated and then install Rails.
 
 <code>gem update --system</code>
 
 <code>gem install rails</code>
 
-8)You won't need this right away, but to use 3rd party libraries (called gems in rails) you should install bundler now. Really helpful way to manage 3rd party software you applications will rely on.
+8) You won't need this right away, but to use 3rd party libraries (called gems in Rails) you should install bundler now. Really helpful way to manage 3rd party software your applications will rely on.
 
 <code>gem install bundler</code>
 
-9)Now create your first rails app! 
+9) Now create your first Rails app! 
 <code>rails new blog</code>
 
 and then type in the following to "change directory" into your new application. Imagine that CD is the same as using a mouse to click on a directory to view its files. cd is the same concept. 
@@ -77,19 +77,19 @@ and generate some scaffolding code, migrate the database, and start the server (
 <code>rake db:migrate</code>
 <code>rails s</code>
 
-10)Now check out the following url to see your first rails app: <a href='http://0.0.0.0:3000/posts'>http://0.0.0.0:3000/posts</a>.
+10) Now check out the following url to see your first rails app: <a href='http://0.0.0.0:3000/posts'>http://0.0.0.0:3000/posts</a>.
 
 Next steps are checking out the following guides and resources:
 
-<a href='http://guides.rubyonrails.org/'>Rails Guide</a>: Read through as much as you possibly can.
+<a href='http://guides.rubyonrails.org/'>Rails Guide</a>: Read through as much as you possibly can
 <a href='http://railscasts.com/'>Railscasts</a>: Watch the lessons and try to copy, these helped me the most as I learned
-<a href='http://stackoverflow.com/'>Stackoverflow</a>: Ask and search for questions you have here.
+<a href='http://stackoverflow.com/'>Stackoverflow</a>: Ask and search for questions you have here
 
 Your first question is probably how do I edit stuff? You can use vim to open up any of the files in application you just made. For example
 
 <code>vim app/views/posts/index.html.erb</code> 
 
-This will open the index file and you can play around with changing words e.t.c.
+This will open the index file and you can play around with changing words etc.
 
 Have fun and good luck!
 
