@@ -7,12 +7,12 @@ Getting started with web development isn't easy. Looking back to when I started,
 
 The following is not going to fully explain the steps (which at some point will be important to understand). Instead, I tried to give explicit instructions for creating a working rails environment that hopefully will be easy for anyone with a Mac to follow. If you are interested in getting started with web dev but not sure where to begin, this is for you!
 
-1) This tutorial won't work on a PC and the process is a little different for Ubuntu(which I first started on). You can buy used macbooks on eBay pretty cheap, or dualboot your PC with Ubuntu. I had someone who knew what they were doing help me with the latter when I started - but I do think a Mac is the easiest option.
+1) This tutorial won't work on a PC and the process is a little different for Ubuntu (which I first started on). You can buy used macbooks on eBay pretty cheap, or dualboot your PC with Ubuntu. I had someone who knew what they were doing help me with the latter when I started - but I do think a Mac is the easiest option.
 
-2) Install X-Code in the App Store. If you have the Lion operating system installed, its free, otherwise you will need to Download it from Apple.com and it costs ~$5 I think - Lion is great and $29 so I would advise downloading Lion. You can also get Lion in the App store.
+2) Install xCode in the app store. If you have the Lion operating system installed, it's free. You can also get Lion in the app store.
 <img src='/images/posts/learning_rails/xcode.png' />
 
-3) Once X-code is installed - next step is installing homebrew. The homebrew githib is <a href='https://github.com/mxcl/homebrew/wiki/installation'>here.</a> All you need to do is open your terminal from spotlight.
+3) Once XCode is installed - next step is installing homebrew. The homebrew github is <a href='https://github.com/mxcl/homebrew/wiki/installation'>here.</a> All you need to do is open your terminal from Spotlight.
 <img src='/images/posts/learning_rails/spotlight.png' />
 and copy and paste in the following command:
 
@@ -22,7 +22,7 @@ It should look something like this:
 <img src='/images/posts/learning_rails/terminal.png' />
 From here you should see a bunch of output. If there are any points where you are asked a question, just hit enter.
 
-4) After x-code is installed - its time to install git. This is really easy to do with the homebrew install. In the same way that you copy and pasted the homebrew install, you copy and paste the following line of code which will install git.
+4) After xCode is installed - its time to install git. This is really easy to do with the homebrew install. In the same way that you copy and pasted the homebrew install, you copy and paste the following line of code which will install git.
 
 <code>brew install git</code>
 
