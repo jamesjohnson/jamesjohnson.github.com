@@ -97,23 +97,24 @@ div#main {
 }
 /* line 87, main.scss */
 div#main h3 {
+  width: 80%;
   font-size: 28px;
   color: #333;
   font-size: 700;
 }
-/* line 92, main.scss */
+/* line 93, main.scss */
 div#main h3 a {
   color: #333;
   text-decoration: none;
 }
-/* line 98, main.scss */
+/* line 99, main.scss */
 div#main h4 {
   padding: 10px;
   color: #fff0ff;
   font-weight: normal;
   font-size: 12px;
 }
-/* line 105, main.scss */
+/* line 106, main.scss */
 div#main .date {
   background-color: #C75233;
   padding: 10px 20px;
@@ -124,32 +125,32 @@ div#main .date {
   top: 44px;
   right: -30px;
 }
-/* line 116, main.scss */
+/* line 117, main.scss */
 div#main p {
   padding: 10px;
   font-size: 20px;
   color: #444;
   line-height: 180%;
 }
-/* line 122, main.scss */
+/* line 123, main.scss */
 div#main p img {
   margin: 20px auto;
   max-width: 100%;
 }
-/* line 128, main.scss */
+/* line 129, main.scss */
 div#main a {
   color: #80BCA3;
   text-decoration: none;
 }
 
-/* line 134, main.scss */
+/* line 135, main.scss */
 div#other {
   float: left;
   width: 150px;
   margin: 40px 20px 10px 25px;
   min-height: 600px;
 }
-/* line 140, main.scss */
+/* line 141, main.scss */
 div#other h3 {
   color: #677f9a;
   padding: 25px;
@@ -158,7 +159,7 @@ div#other h3 {
   font-family: arial, serif;
 }
 
-/* line 149, main.scss */
+/* line 150, main.scss */
 code {
   background-color: #eee;
   width: auto;
@@ -172,7 +173,7 @@ code {
   display: block;
 }
 
-/* line 162, main.scss */
+/* line 163, main.scss */
 span.light {
   background-color: #eee;
   overflow: auto;
