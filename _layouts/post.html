@@ -1,25 +1,13 @@
 ---
 layout: default
 ---
-<div id="main">
+<div class="main">
   <h3>
     <time class='updated' datetime='{{ last.date|date:"%Y-%d-%m %H:%M:%S%z" }}' pubdate></time>
     <a href='{{ last.url }}' title='{{ last.date|date:"%m-%d-%Y" }}' class='entry-title instapaper_title title'>{{ last.title }}</a>
   </h3>
   <h4><span class='date'>{{ last.date|date:"%m %d %Y" }}</span></h4>
-      
-      <div id='body' class='entry-content instapaper_body'>{{ content }}</div>
-    </div>
-    
-  <div id="other">
-    <ul class='posts'>
-      <h3>More posts From James<h3>
-      {% for post in site.posts offset:1 %} 
-      <li>
-      <span class='date'>{{ post.date|date:"%m-%d-%Y" }}</span>
-      <a title='Written on {{ post.date|date:"%m-%d-%Y" }}, {{ post.content|number_of_words }} words' href='{{ post.url }}'>{{ post.title }}</a> </li>
-      {% endfor %}
-    </ul>
-  </div>
+
+  <div id='body' class='entry-content instapaper_body'>{{ content }}</div>
 </div>
 

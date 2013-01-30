@@ -78,7 +78,8 @@ div.wrapper {
   margin: 0 auto;
 }
 
-div#main {
+div.main {
+  margin-bottom: 40px;
   background: #fff;
   @include border-radius(3px);
   padding: 50px;
