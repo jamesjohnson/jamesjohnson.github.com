@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
- <title>James Johnson</title>
- <link href="http://jamesjohnson.me/atom.xml" rel="self"/>
- <link href="http://jamesjohnson.me/"/>
- <updated>2013-01-30T00:21:14-05:00</updated>
- <id>http://jamesjohnson.me/</id>
- <author>
-   <name>James Johnson</name>
-   <email>jamesjohnson11@gmail.com</email>
- </author>
+<rss xmlns="http://www.w3.org/2005/Atom">
+<channel>
+ <title>James Johnson's Blog</title>
+ <link>http://jamesjohnson.me</link>
+ <description>James Johnson's Blog</description>
+ <updated>2013-01-29T15:11:09-05:00</updated>
+ <copyright>Copyright 2010, James Johnson</copyright>
+ <language>en-us</language>
+ <docs>http://validator.w3.org/feed/docs/rss2.html</docs>
 
  
- <entry>
+ <item>
    <title>Rails - Take the First Step</title>
-   <link href="http://jamesjohnson.me/2011/10/05/beginners-guide-to-programming.html"/>
-   <updated>2011-10-05T00:00:00-04:00</updated>
-   <id>http://jamesjohnson.me/2011/10/05/beginners-guide-to-programming</id>
-   <content type="html">&lt;p&gt;A few of my friends with no technical background have recently become interested in learning web development. I usually point them towards Ruby on Rails, mainly because I found it to be the most beginner friendly approach. After a few days however, they usually come back asking for advice on the install. Each of them has struggled a lot with the installation process and thinking back to my first experience, I remember how difficult I found it. For someone who is new to development, text editors and the terminal &amp;#8211; the installation process can be really overwhelming. When there is an application you can make changes to and build on, its much easier to stick with it. The following is not going to fully explain the steps (which at some point will be important to understand). Instead I tried to give explicit instructions for creating a working rails environment. If you work/are interested in technology and were not sure how to get started, this is for you!&lt;/p&gt;
+   <author>James Johnson</author>
+   <pubDate>2011-10-05T00:00:00-04:00</pubDate>
+   <link>http://jamesjohnson.me/2011/10/05/beginners-guide-to-programming.html</link>
+   <guid>http://jamesjohnson.me/2011/10/05/beginners-guide-to-programming</guid>
+   <description>&lt;p&gt;A few of my friends with no technical background have recently become interested in learning web development. I usually point them towards Ruby on Rails, mainly because I found it to be the most beginner friendly approach. After a few days however, they usually come back asking for advice on the install. Each of them has struggled a lot with the installation process and thinking back to my first experience, I remember how difficult I found it. For someone who is new to development, text editors and the terminal &amp;#8211; the installation process can be really overwhelming. When there is an application you can make changes to and build on, its much easier to stick with it. The following is not going to fully explain the steps (which at some point will be important to understand). Instead I tried to give explicit instructions for creating a working rails environment. If you work/are interested in technology and were not sure how to get started, this is for you!&lt;/p&gt;
 &lt;p&gt;1) This won&amp;#8217;t work on a PC and the process is a little different for Ubuntu(which I first started on). You can buy used macbooks on eBay pretty cheap, or dualboot your PC with Ubuntu. I had someone who knew what they were doing help me with the latter when I started &amp;#8211; but I do think a Mac is the best option.&lt;/p&gt;
 &lt;p&gt;2) Install X-Code in the App Store. If you have the Lion operating system installed, its free, otherwise you will need to Download it from Apple.com and it costs ~$5 I think &amp;#8211; Lion is great and $29 so I would advise downloading Lion. You can also get Lion in the App store.&lt;br /&gt;
 &lt;img src='/images/posts/learning_rails/xcode.png' /&gt;&lt;/p&gt;
@@ -72,15 +72,16 @@ Again there will be a bunch of output, but there shouldn&amp;#8217;t be any issu
 &lt;p&gt;&lt;code&gt;vim app/views/posts/index.html.erb&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;This will open the index file and you can play around with changing words e.t.c.&lt;/p&gt;
 &lt;p&gt;Have fun and good luck!&lt;/p&gt;
-&lt;p&gt;questions? &lt;a href='twitter.com/jamesjohnsona'&gt;@jamesjohnsona&lt;/a&gt;&lt;/p&gt;</content>
- </entry>
+&lt;p&gt;questions? &lt;a href='twitter.com/jamesjohnsona'&gt;@jamesjohnsona&lt;/a&gt;&lt;/p&gt;</description>
+ </item>
  
- <entry>
+ <item>
    <title>Ruby on Rails: Beginners Best Friend</title>
-   <link href="http://jamesjohnson.me/2011/04/23/ruby-on-rails-for-beginners.html"/>
-   <updated>2011-04-23T00:00:00-04:00</updated>
-   <id>http://jamesjohnson.me/2011/04/23/ruby-on-rails-for-beginners</id>
-   <content type="html">&lt;p&gt;Learning to code is not easy. Like most things that are worth doing, it takes significant time, effort and suffering  to achieve a very basic level of competency. The biggest barrier I found in teaching myself was my own frustration and lack of progress. I have been doing this a little longer than a year, and it is interesting for me to look back on my progress. Early on there were some very basic problems that took weeks to figure out. It took me a while to come to terms with the fact that there was no easy way to do it.&lt;/p&gt;
+   <author>James Johnson</author>
+   <pubDate>2011-04-23T00:00:00-04:00</pubDate>
+   <link>http://jamesjohnson.me/2011/04/23/ruby-on-rails-for-beginners.html</link>
+   <guid>http://jamesjohnson.me/2011/04/23/ruby-on-rails-for-beginners</guid>
+   <description>&lt;p&gt;Learning to code is not easy. Like most things that are worth doing, it takes significant time, effort and suffering  to achieve a very basic level of competency. The biggest barrier I found in teaching myself was my own frustration and lack of progress. I have been doing this a little longer than a year, and it is interesting for me to look back on my progress. Early on there were some very basic problems that took weeks to figure out. It took me a while to come to terms with the fact that there was no easy way to do it.&lt;/p&gt;
 &lt;p&gt;I tried out a bit of php and python/django before jumping into Ruby on Rails. For someone in a position similar to me, I would highly recommend leaning Ruby on Rails if you are starting frmo scratch When I began I knew nothing, but I knew I was interested in buiding web based technology(like everyone else!). Rails made my life a &lt;i&gt;little&lt;/i&gt; bit easier for the following reasons:&lt;/p&gt;
 &lt;p&gt;1) Scaffolding &amp;#8211; I imagine it is rarely used by those who know what they are doing, I rarely use it now and still don&amp;#8217;t know what I am doing:)- but scaffolding early on allowed me to experiment and learn code that already existed. Installing rails was pretty easy on ubuntu, and then all I had to do was run rails g scaffold Post name:string and I had a webapp! From there I had a framework in which I could learn the &lt;span class=&quot;caps&quot;&gt;CRUD&lt;/span&gt; (Create, Read, Update, Destory) processes very quickly.&lt;/p&gt;
 &lt;p&gt;2) Convention over Configuration &amp;#8211; Looking back now, I realize I spent &lt;i&gt;very&lt;/i&gt; little time actually leaning Ruby, almost all my effort was put into learning html/css/JS/rails routes/&lt;span class=&quot;caps&quot;&gt;MVC&lt;/span&gt; relationships/ and  configuring gems that handled the Ruby for me. This allowed me to build a site that &lt;strong&gt;looked&lt;/strong&gt; like something I wouldn&amp;#8217;t be embarrased to show to friends. That was huge for me at the time.&lt;/p&gt;
@@ -89,8 +90,9 @@ Again there will be a bunch of output, but there shouldn&amp;#8217;t be any issu
 &lt;p&gt;Rails is awesome, the community, the documentation, everything. The only caution I would say is that it is very easy to get caught up with the &amp;#8220;features&amp;#8221; and ignore what is really important, learning Ruby. I have spent a lot of time the past few months playing catch up geting a better understanding of the Ruby language. In order to make significant progress moving forward, this is going to need to be ongoing for me.&lt;/p&gt;
 &lt;p&gt;If I could do it over again, I think I would learn the same way because progress early on is crucial to sticking with it. For people who have jobs, it is &lt;span class=&quot;caps&quot;&gt;REALLY&lt;/span&gt; hard to find the time and concentration to get started. For the first 7 months for me, my scheudle was get home at 7pm and sit at the computer until midnight, then wake up at 6:15 to go to work. It sucked at the time, so it would have been easy to quit if I wasn&amp;#8217;t seeing constant improvement. Totally worth it though.&lt;/p&gt;
 &lt;p&gt;Ive written (and thrown out) a lot of code in the past 6 months, but most recently working with a few friends from college, I helped build &lt;a href=&quot;http://dudedeal.com&quot;&gt;Dudedeal.com&lt;/a&gt; which is a resource for guys looking for relevant daily deals. We have the site built and currently are encouraging beta users to test it out. The deals are limited for right now, but we will be turning up the volume in the couple of weeks!&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://twitter.com/jamesjohnsona&quot;&gt;Following or @ me on Twitter if you have any questions or comments!&lt;/a&gt;&lt;/p&gt;</content>
- </entry>
+&lt;p&gt;&lt;a href=&quot;http://twitter.com/jamesjohnsona&quot;&gt;Following or @ me on Twitter if you have any questions or comments!&lt;/a&gt;&lt;/p&gt;</description>
+ </item>
  
- 
-</feed>
+
+ </channel>
+</rss>

@@ -1,81 +1,71 @@
 @import "compass/css3";
 
 body {
-  background-color: #fff;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Josefin Sans', sans-serif;;
 }
 
- div#header {
-  position: relative;
+div.all {
+  background: #333;
+  background-size: 100%;
+  width: 100%;
+  height: 100%;
+  position: fixed;
   top: 0px;
   left: 0px;
-  height: 10px;
-  background-color: #1e1e1e;
-  border-bottom: 1px solid #282828;
-  width: 100%;
 }
 
 div#navbar {
   position: relative;
   top: 0px;
   left: 0px;
-  background-color: #900;
-  width: 100%;
-  height: 80px;
-  border-right: 1px solid #282828;
+  height: 150px;
 
   h1 {
-    font-size: 40px;
+    font-size: 35px;
     line-height: 40px;
-    position: absolute;
-    left: 0px;
-    top: 20px;
-    margin-left: 20px;
+    padding-top: 40px;
+    margin-left: -80px;
+    text-align: center;
+    font-weight: 700;
+    display: inline-block;
+    vertical-align: middle;
+
+    img {
+      @include border-radius(100px);
+      display: inline-block;
+      vertical-align: top;
+      margin-right: 10px;
+    }
    
     a {
       text-decoration: none;
-      @include single-text-shadow(#000, -1px, -1px, 0);
-      color: #fff;
-      font-family: Helvetica, Arial, sans-serif;
+      text-shadow: #444444 1px 1px 1px;
+      color: #C75233;
+      display: inline-block;
+      vertical-align: middle;
+      padding-top: 7px;
     }
   }
 
-  h2 {
-    padding: 0px 80px 30px 20px;
-    color: #1e1e1e;
-    text-align: right;
-    font-size: 25px;
-    font-weight: normal;
-    text-shadow: #677f9a 1px 1px 0;  
+  hr {
+    background: #666;
+    border: 0;
+    border-top: 1px solid #222;
+    height: 1px;
   }
 
-  p {
-    padding: 10px;
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    line-height: 22px;
-    text-align: left;
-    margin: 0 auto;
-    width: 90%;
-    color: #1e1e1e;
-    
-    a {
-     text-decoration: none;
-     color: #eee;
-     text-shadow: none;
-    } 
-   }
+
 
   ul {
     position: absolute;
     right: 0px;
-    top: 30px;
+    bottom: 10px;
 
     li {
-      display: inline;
       padding-top: 5px;
       padding-bottom: 5px;
       margin-left: 10px;
+      display: inline;
       
       &:hover {
         margin-top: 1px;
@@ -86,60 +76,61 @@ div#navbar {
 
 div.wrapper {
   position: relative;
-  width: 960px;
+  width: 650px;
   margin: 0 auto;
 }
 
 div#main {
-  color: #454545;
-  width: 700px;
-  float: left;
-  color: #454545;
+  background: #fff;
+  @include border-radius(3px);
+  padding: 50px;
+  position: relative;
 
   h3 {
-    font-size: 35px;
-    font-family: arial, serif;
-    font-weight: normal;
-    padding: 40px 10px 0px;
+    font-size: 28px;
+    color: #333;
+    font-size: 700;
 
     a {
-      color: #677f9a;
+      color: #333;
       text-decoration: none;
-
-      &:hover {
-        color: #718fb0;
-      }
     }
   }
 
   h4 {
     padding: 10px;
-    color: #1e1e1e;
+    color: #fff0ff;
     font-weight: normal;
     font-size: 12px;
-    border-bottom: 1px solid #707070;
   }
+
+  .date {
+    background-color: #C75233;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Arvo', Georgia, Times, serif;
+    position: absolute;
+    top: 44px;
+    right: -30px;
+  }
+
   p {
-    text-shadow: #F2F2F2 1px 1px 0;
     padding: 10px;
-    color: #454545;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 22px;
+    font-size: 20px;
+    color: #444;
+    line-height: 180%;;
 
     img {
       margin: 20px auto;
+      max-width: 100%;
     }
   }
 
   a {
-    color: #677F9A;
+    color: #80BCA3;
     text-decoration: none;
-    
-    &:hover {
-      text-decoration: underline;
-    }
-  }
+  }    
 }
 
 div#other {
@@ -161,7 +152,6 @@ div#other {
 code {
   background-color: #eee;
   width: auto;
-  width: 650px;
   overflow: auto;
   border: 1px solid #bbb;
   padding: 5px 10px;
