@@ -3,7 +3,7 @@
  <title>James Johnson</title>
  <link href="http://jamesjohnson.me/atom.xml" rel="self"/>
  <link href="http://jamesjohnson.me/"/>
- <updated>2013-01-30T00:21:14-05:00</updated>
+ <updated>2013-01-30T00:29:06-05:00</updated>
  <id>http://jamesjohnson.me/</id>
  <author>
    <name>James Johnson</name>
@@ -12,50 +12,47 @@
 
  
  <entry>
-   <title>Rails - Take the First Step</title>
+   <title>Rails and Web Development - Take the First Step</title>
    <link href="http://jamesjohnson.me/2011/10/05/beginners-guide-to-programming.html"/>
    <updated>2011-10-05T00:00:00-04:00</updated>
    <id>http://jamesjohnson.me/2011/10/05/beginners-guide-to-programming</id>
-   <content type="html">&lt;p&gt;A few of my friends with no technical background have recently become interested in learning web development. I usually point them towards Ruby on Rails, mainly because I found it to be the most beginner friendly approach. After a few days however, they usually come back asking for advice on the install. Each of them has struggled a lot with the installation process and thinking back to my first experience, I remember how difficult I found it. For someone who is new to development, text editors and the terminal &amp;#8211; the installation process can be really overwhelming. When there is an application you can make changes to and build on, its much easier to stick with it. The following is not going to fully explain the steps (which at some point will be important to understand). Instead I tried to give explicit instructions for creating a working rails environment. If you work/are interested in technology and were not sure how to get started, this is for you!&lt;/p&gt;
-&lt;p&gt;1) This won&amp;#8217;t work on a PC and the process is a little different for Ubuntu(which I first started on). You can buy used macbooks on eBay pretty cheap, or dualboot your PC with Ubuntu. I had someone who knew what they were doing help me with the latter when I started &amp;#8211; but I do think a Mac is the best option.&lt;/p&gt;
-&lt;p&gt;2) Install X-Code in the App Store. If you have the Lion operating system installed, its free, otherwise you will need to Download it from Apple.com and it costs ~$5 I think &amp;#8211; Lion is great and $29 so I would advise downloading Lion. You can also get Lion in the App store.&lt;br /&gt;
+   <content type="html">&lt;p&gt;Getting started with web development isn&amp;#8217;t easy. Looking back to when I started, the first few weeks were the toughest to stick with it. For someone who is new to text editors and the terminal &amp;#8211; the installation process can be really overwhelming. I recently went through the process of helping some of my friends get set up with Ruby on Rails and after doing it a few times, I realized it would be helpful to write a post that others looking to get started could refer to.&lt;/p&gt;
+&lt;p&gt;The following is not going to fully explain the steps (which at some point will be important to understand). Instead, I tried to give explicit instructions for creating a working rails environment that hopefully will be easy for anyone with a Mac to follow. If you are interested in getting started with web dev but not sure where to begin, this is for you!&lt;/p&gt;
+&lt;p&gt;1) This tutorial won&amp;#8217;t work on a PC and the process is a little different for Ubuntu (which I first started on). You can buy used macbooks on eBay pretty cheap, or dualboot your PC with Ubuntu. I had someone who knew what they were doing help me with the latter when I started &amp;#8211; but I do think a Mac is the easiest option.&lt;/p&gt;
+&lt;p&gt;2) Install Xcode in the app store. If you have the Lion operating system installed, it&amp;#8217;s free. You can also get Lion in the app store.&lt;br /&gt;
 &lt;img src='/images/posts/learning_rails/xcode.png' /&gt;&lt;/p&gt;
-&lt;p&gt;3) Once X-code is installed &amp;#8211; next step is installing homebrew. The homebrew githib is &lt;a href='https://github.com/mxcl/homebrew/wiki/installation'&gt;here.&lt;/a&gt; All you need to do is open your terminal from spotlight.&lt;br /&gt;
+&lt;p&gt;3) Once Xcode is installed &amp;#8211; next step is installing homebrew. The homebrew github is &lt;a href='https://github.com/mxcl/homebrew/wiki/installation'&gt;here.&lt;/a&gt; All you need to do is open your terminal from Spotlight.&lt;br /&gt;
 &lt;img src='/images/posts/learning_rails/spotlight.png' /&gt;&lt;br /&gt;
-and copy and paste in the following command:&lt;br /&gt;
-&lt;br/&gt;
-&lt;code&gt;/usr/bin/ruby -e &quot;$(curl -fsSL https://raw.github.com/gist/323731)&quot;&lt;/code&gt;&lt;br /&gt;
-&lt;br/&gt;
-It should look something like this:&lt;br /&gt;
+and copy and paste in the following command:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;/usr/bin/ruby -e &quot;$(curl -fsSL https://raw.github.com/gist/323731)&quot;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;It should look something like this:&lt;br /&gt;
 &lt;img src='/images/posts/learning_rails/terminal.png' /&gt;&lt;br /&gt;
 From here you should see a bunch of output. If there are any points where you are asked a question, just hit enter.&lt;/p&gt;
-&lt;p&gt;4) After x-code is installed &amp;#8211; its time to install git. This is really easy to do with the homebrew install. In the same way that you copy and pasted the homebrew install, you copy and paste the following line of code which will install git.&lt;br /&gt;
-&lt;br/&gt;
-&lt;code&gt;brew install git&lt;/code&gt;&lt;br /&gt;
-&lt;br/&gt;
-Again there will be a bunch of output, but there shouldn&amp;#8217;t be any issues with the install&lt;/p&gt;
+&lt;p&gt;4) After Xcode is installed &amp;#8211; its time to install git. This is really easy to do with the homebrew install. In the same way that you copy and pasted the homebrew install, you copy and paste the following line of code which will install git.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;brew install git&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Again there will be a bunch of output, but there shouldn&amp;#8217;t be any issues with the install.&lt;/p&gt;
 &lt;p&gt;5) Next step is installing &lt;span class=&quot;caps&quot;&gt;RVM&lt;/span&gt; &amp;#8211; this is a ruby tool that makes managing different versions of ruby much easier. When I started this was really confusing for me, so don&amp;#8217;t worry about it too much right now. If you would like to read up on &lt;span class=&quot;caps&quot;&gt;RVM&lt;/span&gt; (which you should!) the link is  &lt;a href='http://beginrescueend.com/'&gt;here.&lt;/a&gt; To install &lt;span class=&quot;caps&quot;&gt;RVM&lt;/span&gt; copy and paste the following (same as before) into the terminal.&lt;br /&gt;
-&lt;br/&gt;
-&lt;code&gt;bash &amp;lt; &amp;lt;(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer)&lt;/code&gt;&lt;br /&gt;
-&lt;br/&gt;&lt;/p&gt;
+&lt;code&gt;bash &amp;lt; &amp;lt;(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer)&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;6) This is the most complicated part of the install for a new user, you need to add &lt;span class=&quot;caps&quot;&gt;RVM&lt;/span&gt; to your path so that you can access it everytime you use the terminal. This is done by creating or adding to an existing .bashrc file. In your terminal copy and paste the following:&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;vim ~/.bashrc&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;You are using a texteditor that allows you to edit files. Vim has a series of commands that are great for developers but hard for a first timer to pick up. &lt;/p&gt;
-&lt;p&gt;If there is code existing in this file, use the down arrow (note left and right won&amp;#8217;t work) go to the bottom of the file and press the letter &lt;span class='light'&gt;i&lt;/span&gt; once. Go to the end of the line using the arrow keys and hit enter to go onto a new line. If you make a mistake at any point. Hit the &lt;span class='light'&gt;esc&lt;/span&gt; key and press &lt;span class='light'&gt;u&lt;/span&gt;. Once at the bottom of the file, paste on a new line the following code:&lt;/p&gt;
+&lt;p&gt;You are using a text editor that allows you to edit files. Vim has a series of commands that are great for developers but hard for a first timer to pick up. &lt;/p&gt;
+&lt;p&gt;If there is code existing in this file, use the down arrow go to the bottom of the file and press the letter &lt;span class='light'&gt;o&lt;/span&gt;. If you make a mistake at any point. Hit the &lt;span class='light'&gt;esc&lt;/span&gt; key and press &lt;span class='light'&gt;u&lt;/span&gt; (&lt;span class='light'&gt;u&lt;/span&gt; will undo your changes). Once at the bottom of the file, after pressing &lt;span class='light'&gt;o&lt;/span&gt;, paste on a new line the following code:&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;[[ -s $HOME/.rvm/scripts/rvm ]] &amp;amp;&amp;amp; . $HOME/.rvm/scripts/rvm&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;Once the code is there press the &lt;span class='light'&gt;esc&lt;/span&gt; key, then type in the following &lt;span class='light'&gt;:wq&lt;/span&gt;. the &lt;span class='light'&gt;:wq&lt;/span&gt; should show up in the bottom nav of the program, you should not be typing this into the file itself. &lt;span class='light'&gt;:w&lt;/span&gt; is the command to save a file in vim and &lt;span class='light'&gt;:q&lt;/span&gt; is the command to quit, together they will save and quit. When you type &lt;span class='light'&gt;:wq&lt;/span&gt; it will save the ~/.bashrc file and exit.&lt;/p&gt;
+&lt;p&gt;Once the code is there press the &lt;span class='light'&gt;esc&lt;/span&gt; key, then type in the following &lt;span class='light'&gt;:wq&lt;/span&gt;. the &lt;span class='light'&gt;:wq&lt;/span&gt; should show up in the bottom nav of the program, you should not be typing this into the file itself. &lt;span class='light'&gt;:w&lt;/span&gt; is the command to save a file in vim and &lt;span class='light'&gt;:q&lt;/span&gt; is the command to quit, together they will save and quit. When you type &lt;span class='light'&gt;:wq&lt;/span&gt; it will save the ~/.bashrc file and exit. The image below is how it should look (ignore the colors) if you do it right.&lt;/p&gt;
 &lt;p&gt;&lt;img src='/images/posts/learning_rails/bashrc.png' /&gt;&lt;/p&gt;
-&lt;p&gt;7)After adding &lt;span class=&quot;caps&quot;&gt;RVM&lt;/span&gt; to the path, you will need to exit out of the terminal and reopen it. Next step is to install ruby and then rails! To do so, copy and paste in the following commands to the terminal:&lt;/p&gt;
+&lt;p&gt;7) After adding &lt;span class=&quot;caps&quot;&gt;RVM&lt;/span&gt; to the path, you will need to exit out of the terminal and reopen it. Next step is to install Ruby and then Rails! To do so, copy and paste in the following commands to the terminal:&lt;/p&gt;
 &lt;p&gt;This will install Ruby&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;rvm install ruby-1.9.2-p290&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;If you see the following error: &amp;#8220;rvm: command not found&amp;#8221; &amp;#8211; paste the following into the console and retry:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;source ~/.bashrc&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;Once it is done installing you need to tell &lt;span class=&quot;caps&quot;&gt;RVM&lt;/span&gt; that you would like to use Ruby 1.9.2&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;rvm use 1.9.2&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;You should get a green confirm message that this worked, next time to install Rails. First confirm gems are updated and then install rails.&lt;/p&gt;
+&lt;p&gt;You should get a green confirm message that this worked, next time to install Rails. First confirm gems are updated and then install Rails.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;gem update --system&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;gem install rails&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;8)You won&amp;#8217;t need this right away, but to use 3rd party libraries (called gems in rails) you should install bundler now. Really helpful way to manage 3rd party software you applications will rely on.&lt;/p&gt;
+&lt;p&gt;8) You won&amp;#8217;t need this right away, but to use 3rd party libraries (called gems in Rails) you should install bundler now. Really helpful way to manage 3rd party software your applications will rely on.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;gem install bundler&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;9)Now create your first rails app! &lt;br /&gt;
+&lt;p&gt;9) Now create your first Rails app! &lt;br /&gt;
 &lt;code&gt;rails new blog&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;and then type in the following to &amp;#8220;change directory&amp;#8221; into your new application. Imagine that CD is the same as using a mouse to click on a directory to view its files. cd is the same concept.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;cd blog&lt;/code&gt;&lt;/p&gt;
@@ -63,16 +60,16 @@ Again there will be a bunch of output, but there shouldn&amp;#8217;t be any issu
 &lt;code&gt;rails g scaffold post title:string body:text published:boolean&lt;/code&gt;&lt;br /&gt;
 &lt;code&gt;rake db:migrate&lt;/code&gt;&lt;br /&gt;
 &lt;code&gt;rails s&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;10)Now check out the following url to see your first rails app: &lt;a href='http://0.0.0.0:3000/posts'&gt;http://0.0.0.0:3000/posts&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;10) Now check out the following url to see your first rails app: &lt;a href='http://0.0.0.0:3000/posts'&gt;http://0.0.0.0:3000/posts&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Next steps are checking out the following guides and resources:&lt;/p&gt;
-&lt;p&gt;&lt;a href='http://guides.rubyonrails.org/'&gt;Rails Guide&lt;/a&gt;: Read through as much as you possibly can.&lt;br /&gt;
+&lt;p&gt;&lt;a href='http://guides.rubyonrails.org/'&gt;Rails Guide&lt;/a&gt;: Read through as much as you possibly can&lt;br /&gt;
 &lt;a href='http://railscasts.com/'&gt;Railscasts&lt;/a&gt;: Watch the lessons and try to copy, these helped me the most as I learned&lt;br /&gt;
-&lt;a href='http://stackoverflow.com/'&gt;Stackoverflow&lt;/a&gt;: Ask and search for questions you have here.&lt;/p&gt;
+&lt;a href='http://stackoverflow.com/'&gt;Stackoverflow&lt;/a&gt;: Ask and search for questions you have here&lt;/p&gt;
 &lt;p&gt;Your first question is probably how do I edit stuff? You can use vim to open up any of the files in application you just made. For example&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;vim app/views/posts/index.html.erb&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;This will open the index file and you can play around with changing words e.t.c.&lt;/p&gt;
+&lt;p&gt;This will open the index file and you can play around with changing words etc.&lt;/p&gt;
 &lt;p&gt;Have fun and good luck!&lt;/p&gt;
-&lt;p&gt;questions? &lt;a href='twitter.com/jamesjohnsona'&gt;@jamesjohnsona&lt;/a&gt;&lt;/p&gt;</content>
+&lt;p&gt;questions? &lt;a href='http://twitter.com/jamesjohnsona'&gt;@jamesjohnsona&lt;/a&gt;&lt;/p&gt;</content>
  </entry>
  
  <entry>

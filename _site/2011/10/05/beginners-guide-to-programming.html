@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <title>Rails - Take the First Step</title>
+    <title>Rails and Web Development - Take the First Step</title>
     <meta name="author" content="James Johnson" />
     <meta name="title" content="" />
     <meta property="og:title" content="" />
@@ -14,18 +14,38 @@
     <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:100,400,700' rel='stylesheet' type='text/css'>
     <link href="/css/reset.css" rel="stylesheet" />
     <link href="/css/main.css" rel="stylesheet" />
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-20082972-6']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+       })();
+
+     </script>
   </head>
   <body>
     <div class="all">
     </div>
     <div id="navbar">
       <div class='wrapper'>
+<<<<<<< HEAD
         <h1>
           <img src='http://graph.facebook.com/jamesjohnsona/picture' />
           <a href="/">James Johnson</a>
         </h1>
         <ul>
           <li><a href="http://twitter.com/jamesjohnsona"><img src="/images/twitter.png" height="32px" width="32px"></a></li>
+=======
+        <h1><a href="/">jamesjohnson.me</a></h1>
+        <ul>
+          <li><a href="http://twitter.com/jamesjohnsona"><img src="/images/icon_twitter.png" height="32px" width="32px"></a></li>
+          <li><a href="mailto:jamesjohnson11@gmail.com"><img src="/images/icon_mail.png" height="32px" width="32px"></a></li>
+>>>>>>> 01208046e7d1fe29f8fbca88e7764dcca8541148
         </ul>
       </div>
     </div>
@@ -37,46 +57,43 @@
   </h3>
   <h4><span class='date'></span></h4>
       
-      <div id='body' class='entry-content instapaper_body'><p>A few of my friends with no technical background have recently become interested in learning web development. I usually point them towards Ruby on Rails, mainly because I found it to be the most beginner friendly approach. After a few days however, they usually come back asking for advice on the install. Each of them has struggled a lot with the installation process and thinking back to my first experience, I remember how difficult I found it. For someone who is new to development, text editors and the terminal &#8211; the installation process can be really overwhelming. When there is an application you can make changes to and build on, its much easier to stick with it. The following is not going to fully explain the steps (which at some point will be important to understand). Instead I tried to give explicit instructions for creating a working rails environment. If you work/are interested in technology and were not sure how to get started, this is for you!</p>
-<p>1) This won&#8217;t work on a PC and the process is a little different for Ubuntu(which I first started on). You can buy used macbooks on eBay pretty cheap, or dualboot your PC with Ubuntu. I had someone who knew what they were doing help me with the latter when I started &#8211; but I do think a Mac is the best option.</p>
-<p>2) Install X-Code in the App Store. If you have the Lion operating system installed, its free, otherwise you will need to Download it from Apple.com and it costs ~$5 I think &#8211; Lion is great and $29 so I would advise downloading Lion. You can also get Lion in the App store.<br />
+      <div id='body' class='entry-content instapaper_body'><p>Getting started with web development isn&#8217;t easy. Looking back to when I started, the first few weeks were the toughest to stick with it. For someone who is new to text editors and the terminal &#8211; the installation process can be really overwhelming. I recently went through the process of helping some of my friends get set up with Ruby on Rails and after doing it a few times, I realized it would be helpful to write a post that others looking to get started could refer to.</p>
+<p>The following is not going to fully explain the steps (which at some point will be important to understand). Instead, I tried to give explicit instructions for creating a working rails environment that hopefully will be easy for anyone with a Mac to follow. If you are interested in getting started with web dev but not sure where to begin, this is for you!</p>
+<p>1) This tutorial won&#8217;t work on a PC and the process is a little different for Ubuntu (which I first started on). You can buy used macbooks on eBay pretty cheap, or dualboot your PC with Ubuntu. I had someone who knew what they were doing help me with the latter when I started &#8211; but I do think a Mac is the easiest option.</p>
+<p>2) Install Xcode in the app store. If you have the Lion operating system installed, it&#8217;s free. You can also get Lion in the app store.<br />
 <img src='/images/posts/learning_rails/xcode.png' /></p>
-<p>3) Once X-code is installed &#8211; next step is installing homebrew. The homebrew githib is <a href='https://github.com/mxcl/homebrew/wiki/installation'>here.</a> All you need to do is open your terminal from spotlight.<br />
+<p>3) Once Xcode is installed &#8211; next step is installing homebrew. The homebrew github is <a href='https://github.com/mxcl/homebrew/wiki/installation'>here.</a> All you need to do is open your terminal from Spotlight.<br />
 <img src='/images/posts/learning_rails/spotlight.png' /><br />
-and copy and paste in the following command:<br />
-<br/>
-<code>/usr/bin/ruby -e "$(curl -fsSL https://raw.github.com/gist/323731)"</code><br />
-<br/>
-It should look something like this:<br />
+and copy and paste in the following command:</p>
+<p><code>/usr/bin/ruby -e "$(curl -fsSL https://raw.github.com/gist/323731)"</code></p>
+<p>It should look something like this:<br />
 <img src='/images/posts/learning_rails/terminal.png' /><br />
 From here you should see a bunch of output. If there are any points where you are asked a question, just hit enter.</p>
-<p>4) After x-code is installed &#8211; its time to install git. This is really easy to do with the homebrew install. In the same way that you copy and pasted the homebrew install, you copy and paste the following line of code which will install git.<br />
-<br/>
-<code>brew install git</code><br />
-<br/>
-Again there will be a bunch of output, but there shouldn&#8217;t be any issues with the install</p>
+<p>4) After Xcode is installed &#8211; its time to install git. This is really easy to do with the homebrew install. In the same way that you copy and pasted the homebrew install, you copy and paste the following line of code which will install git.</p>
+<p><code>brew install git</code></p>
+<p>Again there will be a bunch of output, but there shouldn&#8217;t be any issues with the install.</p>
 <p>5) Next step is installing <span class="caps">RVM</span> &#8211; this is a ruby tool that makes managing different versions of ruby much easier. When I started this was really confusing for me, so don&#8217;t worry about it too much right now. If you would like to read up on <span class="caps">RVM</span> (which you should!) the link is  <a href='http://beginrescueend.com/'>here.</a> To install <span class="caps">RVM</span> copy and paste the following (same as before) into the terminal.<br />
-<br/>
-<code>bash &lt; &lt;(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer)</code><br />
-<br/></p>
+<code>bash &lt; &lt;(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer)</code></p>
 <p>6) This is the most complicated part of the install for a new user, you need to add <span class="caps">RVM</span> to your path so that you can access it everytime you use the terminal. This is done by creating or adding to an existing .bashrc file. In your terminal copy and paste the following:</p>
 <p><code>vim ~/.bashrc</code></p>
-<p>You are using a texteditor that allows you to edit files. Vim has a series of commands that are great for developers but hard for a first timer to pick up. </p>
-<p>If there is code existing in this file, use the down arrow (note left and right won&#8217;t work) go to the bottom of the file and press the letter <span class='light'>i</span> once. Go to the end of the line using the arrow keys and hit enter to go onto a new line. If you make a mistake at any point. Hit the <span class='light'>esc</span> key and press <span class='light'>u</span>. Once at the bottom of the file, paste on a new line the following code:</p>
+<p>You are using a text editor that allows you to edit files. Vim has a series of commands that are great for developers but hard for a first timer to pick up. </p>
+<p>If there is code existing in this file, use the down arrow go to the bottom of the file and press the letter <span class='light'>o</span>. If you make a mistake at any point. Hit the <span class='light'>esc</span> key and press <span class='light'>u</span> (<span class='light'>u</span> will undo your changes). Once at the bottom of the file, after pressing <span class='light'>o</span>, paste on a new line the following code:</p>
 <p><code>[[ -s $HOME/.rvm/scripts/rvm ]] &amp;&amp; . $HOME/.rvm/scripts/rvm</code></p>
-<p>Once the code is there press the <span class='light'>esc</span> key, then type in the following <span class='light'>:wq</span>. the <span class='light'>:wq</span> should show up in the bottom nav of the program, you should not be typing this into the file itself. <span class='light'>:w</span> is the command to save a file in vim and <span class='light'>:q</span> is the command to quit, together they will save and quit. When you type <span class='light'>:wq</span> it will save the ~/.bashrc file and exit.</p>
+<p>Once the code is there press the <span class='light'>esc</span> key, then type in the following <span class='light'>:wq</span>. the <span class='light'>:wq</span> should show up in the bottom nav of the program, you should not be typing this into the file itself. <span class='light'>:w</span> is the command to save a file in vim and <span class='light'>:q</span> is the command to quit, together they will save and quit. When you type <span class='light'>:wq</span> it will save the ~/.bashrc file and exit. The image below is how it should look (ignore the colors) if you do it right.</p>
 <p><img src='/images/posts/learning_rails/bashrc.png' /></p>
-<p>7)After adding <span class="caps">RVM</span> to the path, you will need to exit out of the terminal and reopen it. Next step is to install ruby and then rails! To do so, copy and paste in the following commands to the terminal:</p>
+<p>7) After adding <span class="caps">RVM</span> to the path, you will need to exit out of the terminal and reopen it. Next step is to install Ruby and then Rails! To do so, copy and paste in the following commands to the terminal:</p>
 <p>This will install Ruby</p>
 <p><code>rvm install ruby-1.9.2-p290</code></p>
+<p>If you see the following error: &#8220;rvm: command not found&#8221; &#8211; paste the following into the console and retry:</p>
+<p><code>source ~/.bashrc</code></p>
 <p>Once it is done installing you need to tell <span class="caps">RVM</span> that you would like to use Ruby 1.9.2</p>
 <p><code>rvm use 1.9.2</code></p>
-<p>You should get a green confirm message that this worked, next time to install Rails. First confirm gems are updated and then install rails.</p>
+<p>You should get a green confirm message that this worked, next time to install Rails. First confirm gems are updated and then install Rails.</p>
 <p><code>gem update --system</code></p>
 <p><code>gem install rails</code></p>
-<p>8)You won&#8217;t need this right away, but to use 3rd party libraries (called gems in rails) you should install bundler now. Really helpful way to manage 3rd party software you applications will rely on.</p>
+<p>8) You won&#8217;t need this right away, but to use 3rd party libraries (called gems in Rails) you should install bundler now. Really helpful way to manage 3rd party software your applications will rely on.</p>
 <p><code>gem install bundler</code></p>
-<p>9)Now create your first rails app! <br />
+<p>9) Now create your first Rails app! <br />
 <code>rails new blog</code></p>
 <p>and then type in the following to &#8220;change directory&#8221; into your new application. Imagine that CD is the same as using a mouse to click on a directory to view its files. cd is the same concept.</p>
 <p><code>cd blog</code></p>
@@ -84,16 +101,16 @@ Again there will be a bunch of output, but there shouldn&#8217;t be any issues w
 <code>rails g scaffold post title:string body:text published:boolean</code><br />
 <code>rake db:migrate</code><br />
 <code>rails s</code></p>
-<p>10)Now check out the following url to see your first rails app: <a href='http://0.0.0.0:3000/posts'>http://0.0.0.0:3000/posts</a>.</p>
+<p>10) Now check out the following url to see your first rails app: <a href='http://0.0.0.0:3000/posts'>http://0.0.0.0:3000/posts</a>.</p>
 <p>Next steps are checking out the following guides and resources:</p>
-<p><a href='http://guides.rubyonrails.org/'>Rails Guide</a>: Read through as much as you possibly can.<br />
+<p><a href='http://guides.rubyonrails.org/'>Rails Guide</a>: Read through as much as you possibly can<br />
 <a href='http://railscasts.com/'>Railscasts</a>: Watch the lessons and try to copy, these helped me the most as I learned<br />
-<a href='http://stackoverflow.com/'>Stackoverflow</a>: Ask and search for questions you have here.</p>
+<a href='http://stackoverflow.com/'>Stackoverflow</a>: Ask and search for questions you have here</p>
 <p>Your first question is probably how do I edit stuff? You can use vim to open up any of the files in application you just made. For example</p>
 <p><code>vim app/views/posts/index.html.erb</code></p>
-<p>This will open the index file and you can play around with changing words e.t.c.</p>
+<p>This will open the index file and you can play around with changing words etc.</p>
 <p>Have fun and good luck!</p>
-<p>questions? <a href='twitter.com/jamesjohnsona'>@jamesjohnsona</a></p></div>
+<p>questions? <a href='http://twitter.com/jamesjohnsona'>@jamesjohnsona</a></p></div>
     </div>
     
   <div id="other">
