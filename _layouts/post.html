@@ -6,7 +6,7 @@ layout: default
     <time class='updated' datetime='{{ last.date|date:"%Y-%d-%m %H:%M:%S%z" }}' pubdate></time>
     <a href='{{ last.url }}' title='{{ last.date|date:"%m-%d-%Y" }}' class='entry-title instapaper_title title'>{{ last.title }}</a>
   </h3>
-  <h4><span class='date'>{{ last.date|date:"%m %d %Y" }}</span></h4>
+  <h4>{{ last.date|date:"%m %d %Y" }}</h4>
 
   <div id='body' class='entry-content instapaper_body'>{{ content }}</div>
 </div>
