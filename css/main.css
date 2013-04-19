@@ -49,7 +49,7 @@ div.clear {
     display: none;
   }
   /* line 58, main.scss */
-  div.nav h1 {
+  div.nav h1, div.nav p, div.nav .icons {
     display: none;
   }
   /* line 63, main.scss */
