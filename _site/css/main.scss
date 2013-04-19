@@ -86,6 +86,20 @@ div.nav {
     opacity: 0;
   }
 
+  span.icons {
+    display: block;
+    width: 180px;
+    margin-left: 31px;
+
+    img {
+      width: 25px;
+      padding: 6px;
+
+      &:hover {
+      }
+    }
+  }
+
   div.j {
     width: 15px;
     font-family: "Grand Hotel", cursive;
@@ -108,11 +122,26 @@ div.nav {
   }
 
   h2 {
-    color: $darkyellow;
+    color: $yellow;
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     font-size: 22px;
-    padding: 10px 34px;
+    padding: 20px 34px;
+  }
+  
+  p {
+    font-size: 15px;
+    color: $darkyellow;
+    font-weight: 400;
+    font-family: "Maven Pro", sans-serif;
+    width: 172px;
+    line-height: 170%;
+    padding: 0px 33px 20px;
+
+    a {
+      color: $yellow;
+      text-decoration: none;
+    }
   }
 }
 
