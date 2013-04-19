@@ -24,8 +24,12 @@ div.nav {
   padding-top: 60px;
   position: fixed;
   height: 100%;
-  width: 250px;
+  width: 0px;
   background: $red;
+
+  div.fade {
+    opacity: 0;
+  }
 
   div.j {
     width: 15px;
@@ -71,40 +75,54 @@ div.wrapper {
 }
 
 div.main {
+  opacity: 0;
   margin-bottom: 40px;
   max-width: 780px;
+  width: 50%;
   margin-left: 250px;
   @include border-radius(3px);
   padding: 50px;
   position: relative;
 
   h3 {
-    width: 80%;
     font-size: 28px;
+    padding-left: 10px;
     color: #191919;
     font-size: 700;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'PT Sans', sans-serif;
     font-weight: 700;
 
     a {
       color: #191919;
       text-decoration: none;
+      -moz-transition: color 0.5s;
+      -webkit-transition: color 0.5s;
+      -o-transition: color 0.5s;
+
+      &:hover {
+        color: #b41b28;
+        -moz-transition: color 0.5s;
+        -webkit-transition: color 0.5s;
+        -o-transition: color 0.5s;
+      }
     }
   }
 
   h4 {
     padding: 10px;
-    color: #830800;
+    color: #838383;
     font-weight: normal;
-    font-size: 12px;
+    font-size: 20px;
+    font-weight: 100;
+    font-family: 'PT Sans', sans-serif;
   }
 
   p {
     padding: 10px;
-    font-size: 18px;
+    font-size: 16px;
     color: #191919;
     font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 180%;;
 
     img {

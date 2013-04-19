@@ -15,10 +15,14 @@ div.nav {
   padding-top: 60px;
   position: fixed;
   height: 100%;
-  width: 250px;
+  width: 0px;
   background: #cd563b;
 }
 /* line 30, main.scss */
+div.nav div.fade {
+  opacity: 0;
+}
+/* line 34, main.scss */
 div.nav div.j {
   width: 15px;
   font-family: "Grand Hotel", cursive;
@@ -35,7 +39,7 @@ div.nav div.j {
   padding: 12px 20px;
   text-align: center;
 }
-/* line 43, main.scss */
+/* line 47, main.scss */
 div.nav h1 {
   font-family: "Maven Pro", sans-serif;
   font-size: 40px;
@@ -44,7 +48,7 @@ div.nav h1 {
   padding: 10px;
   float: left;
 }
-/* line 52, main.scss */
+/* line 56, main.scss */
 div.nav h2 {
   color: #eed0b2;
   font-family: "Open Sans", sans-serif;
@@ -53,22 +57,24 @@ div.nav h2 {
   padding: 10px 34px;
 }
 
-/* line 61, main.scss */
+/* line 65, main.scss */
 div.clear {
   clear: both;
 }
 
-/* line 67, main.scss */
+/* line 71, main.scss */
 div.wrapper {
   position: relative;
   width: 650px;
   margin: 0 auto;
 }
 
-/* line 73, main.scss */
+/* line 77, main.scss */
 div.main {
+  opacity: 0;
   margin-bottom: 40px;
   max-width: 780px;
+  width: 50%;
   margin-left: 250px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -78,55 +84,67 @@ div.main {
   padding: 50px;
   position: relative;
 }
-/* line 81, main.scss */
+/* line 87, main.scss */
 div.main h3 {
-  width: 80%;
   font-size: 28px;
+  padding-left: 10px;
   color: #191919;
   font-size: 700;
-  font-family: "Open Sans", sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
 }
-/* line 89, main.scss */
+/* line 95, main.scss */
 div.main h3 a {
   color: #191919;
   text-decoration: none;
-}
-/* line 95, main.scss */
-div.main h4 {
-  padding: 10px;
-  color: #830800;
-  font-weight: normal;
-  font-size: 12px;
+  -moz-transition: color 0.5s;
+  -webkit-transition: color 0.5s;
+  -o-transition: color 0.5s;
 }
 /* line 102, main.scss */
+div.main h3 a:hover {
+  color: #b41b28;
+  -moz-transition: color 0.5s;
+  -webkit-transition: color 0.5s;
+  -o-transition: color 0.5s;
+}
+/* line 111, main.scss */
+div.main h4 {
+  padding: 10px;
+  color: #838383;
+  font-weight: normal;
+  font-size: 20px;
+  font-weight: 100;
+  font-family: "PT Sans", sans-serif;
+}
+/* line 120, main.scss */
 div.main p {
   padding: 10px;
-  font-size: 18px;
+  font-size: 16px;
   color: #191919;
   font-family: "Open Sans", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 180%;
 }
-/* line 110, main.scss */
+/* line 128, main.scss */
 div.main p img {
   margin: 20px auto;
   max-width: 100%;
 }
-/* line 116, main.scss */
+/* line 134, main.scss */
 div.main a {
   color: #80BCA3;
   text-decoration: none;
 }
 
-/* line 122, main.scss */
+/* line 140, main.scss */
 div#other {
   float: left;
   width: 150px;
   margin: 40px 20px 10px 25px;
   min-height: 600px;
 }
-/* line 128, main.scss */
+/* line 146, main.scss */
 div#other h3 {
   color: #677f9a;
   padding: 25px;
@@ -135,7 +153,7 @@ div#other h3 {
   font-family: arial, serif;
 }
 
-/* line 137, main.scss */
+/* line 155, main.scss */
 code {
   background-color: #eee;
   width: auto;
@@ -149,7 +167,7 @@ code {
   display: block;
 }
 
-/* line 150, main.scss */
+/* line 168, main.scss */
 span.light {
   background-color: #eee;
   overflow: auto;

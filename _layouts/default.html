@@ -11,8 +11,10 @@
     <meta property="og:description" content="{{ page.meta_description }}" />
 
     <link href="/css/reset.css" rel="stylesheet" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <link href='http://fonts.googleapis.com/css?family=Grand+Hotel' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Maven+Pro:400,700,500' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400, 600, 700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300, 400,700,600' rel='stylesheet' type='text/css'>
     <link href="/css/main.css" rel="stylesheet" />
     <script type="text/javascript">
@@ -31,13 +33,29 @@
   </head>
   <body>
     <div class='nav'>
-      <div class='j'>
-        J
+      <div class='fade'>
+        <div class='j'>
+          J
+        </div>
+        <h1>Blog</h1>
+        <div class='clear'></div>
+        <h2>James Johnson</h2>
       </div>
-      <h1>Blog</h1>
-      <div class='clear'></div>
-      <h2>James Johnson</h2>
     </div>
       {{ content }}
   </body>
+  <script>
+    $(function() {
+      $('.nav').delay(300).animate({
+        width: '250px'
+        }, 400, function() {
+        $('.fade').animate({
+          opacity: 1
+        }, 500)
+      });
+      $('.main').delay(600).animate({
+        opacity: 1
+      }, 1100);
+    });
+  </script>
 </html>
