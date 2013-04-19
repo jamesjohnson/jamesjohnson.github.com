@@ -20,11 +20,66 @@ div.top {
   width: 100%;
 }
 
+div.clear {
+  clear: both;
+}
+
+@media screen and (min-width: 700px) {
+  div.nav{
+    padding-top: 60px;
+    height: 100%;
+    width: 0px;
+
+    h1 {
+      padding: 10px;
+    }
+  }
+
+  div.main {
+    width: 80%;
+    max-width: 780px;
+    padding: 50px;
+    width: 50%;
+    margin-left: 250px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  div.nav {
+    padding-top: 10px;
+    height: 50px;
+    top: 0;
+    width: 100% !important;
+
+    div.j {
+      display: none;
+    }
+
+    h1 {
+      display: none;
+    }
+
+
+    h2 {
+      float: left;
+    }
+
+    h2:after {
+      content: "'s Blog"
+    }
+  }
+
+  div.main {
+    max-width: 780px;
+    position: relative;
+    padding: 30px;
+    margin-top: 50px;
+    width: 80%;
+  }
+}
+
 div.nav {
-  padding-top: 60px;
   position: fixed;
-  height: 100%;
-  width: 0px;
   background: $red;
 
   div.fade {
@@ -49,7 +104,6 @@ div.nav {
     font-size: 40px;
     font-weight: 700;
     color: $darkred;
-    padding: 10px;
     float: left;
   }
 
@@ -62,9 +116,6 @@ div.nav {
   }
 }
 
-div.clear {
-  clear: both;
-}
 
 
 
@@ -77,11 +128,7 @@ div.wrapper {
 div.main {
   opacity: 0;
   margin-bottom: 40px;
-  max-width: 780px;
-  width: 50%;
-  margin-left: 250px;
   @include border-radius(3px);
-  padding: 50px;
   position: relative;
 
   h3 {

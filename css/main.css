@@ -11,18 +11,75 @@ div.top {
 }
 
 /* line 23, main.scss */
+div.clear {
+  clear: both;
+}
+
+@media screen and (min-width: 700px) {
+  /* line 28, main.scss */
+  div.nav {
+    padding-top: 60px;
+    height: 100%;
+    width: 0px;
+  }
+  /* line 33, main.scss */
+  div.nav h1 {
+    padding: 10px;
+  }
+
+  /* line 38, main.scss */
+  div.main {
+    width: 80%;
+    max-width: 780px;
+    padding: 50px;
+    width: 50%;
+    margin-left: 250px;
+  }
+}
+@media screen and (max-width: 700px) {
+  /* line 48, main.scss */
+  div.nav {
+    padding-top: 10px;
+    height: 50px;
+    top: 0;
+    width: 100% !important;
+  }
+  /* line 54, main.scss */
+  div.nav div.j {
+    display: none;
+  }
+  /* line 58, main.scss */
+  div.nav h1 {
+    display: none;
+  }
+  /* line 63, main.scss */
+  div.nav h2 {
+    float: left;
+  }
+  /* line 67, main.scss */
+  div.nav h2:after {
+    content: "'s Blog";
+  }
+
+  /* line 72, main.scss */
+  div.main {
+    max-width: 780px;
+    position: relative;
+    padding: 30px;
+    margin-top: 50px;
+    width: 80%;
+  }
+}
+/* line 81, main.scss */
 div.nav {
-  padding-top: 60px;
   position: fixed;
-  height: 100%;
-  width: 0px;
   background: #cd563b;
 }
-/* line 30, main.scss */
+/* line 85, main.scss */
 div.nav div.fade {
   opacity: 0;
 }
-/* line 34, main.scss */
+/* line 89, main.scss */
 div.nav div.j {
   width: 15px;
   font-family: "Grand Hotel", cursive;
@@ -39,16 +96,15 @@ div.nav div.j {
   padding: 12px 20px;
   text-align: center;
 }
-/* line 47, main.scss */
+/* line 102, main.scss */
 div.nav h1 {
   font-family: "Maven Pro", sans-serif;
   font-size: 40px;
   font-weight: 700;
   color: #8f2e1f;
-  padding: 10px;
   float: left;
 }
-/* line 56, main.scss */
+/* line 110, main.scss */
 div.nav h2 {
   color: #eed0b2;
   font-family: "Open Sans", sans-serif;
@@ -57,34 +113,25 @@ div.nav h2 {
   padding: 10px 34px;
 }
 
-/* line 65, main.scss */
-div.clear {
-  clear: both;
-}
-
-/* line 71, main.scss */
+/* line 122, main.scss */
 div.wrapper {
   position: relative;
   width: 650px;
   margin: 0 auto;
 }
 
-/* line 77, main.scss */
+/* line 128, main.scss */
 div.main {
   opacity: 0;
   margin-bottom: 40px;
-  max-width: 780px;
-  width: 50%;
-  margin-left: 250px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
   -o-border-radius: 3px;
   border-radius: 3px;
-  padding: 50px;
   position: relative;
 }
-/* line 87, main.scss */
+/* line 134, main.scss */
 div.main h3 {
   font-size: 28px;
   padding-left: 10px;
@@ -93,7 +140,7 @@ div.main h3 {
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
 }
-/* line 95, main.scss */
+/* line 142, main.scss */
 div.main h3 a {
   color: #191919;
   text-decoration: none;
@@ -101,14 +148,14 @@ div.main h3 a {
   -webkit-transition: color 0.5s;
   -o-transition: color 0.5s;
 }
-/* line 102, main.scss */
+/* line 149, main.scss */
 div.main h3 a:hover {
   color: #b41b28;
   -moz-transition: color 0.5s;
   -webkit-transition: color 0.5s;
   -o-transition: color 0.5s;
 }
-/* line 111, main.scss */
+/* line 158, main.scss */
 div.main h4 {
   padding: 10px;
   color: #838383;
@@ -117,7 +164,7 @@ div.main h4 {
   font-weight: 100;
   font-family: "PT Sans", sans-serif;
 }
-/* line 120, main.scss */
+/* line 167, main.scss */
 div.main p {
   padding: 10px;
   font-size: 16px;
@@ -126,25 +173,25 @@ div.main p {
   font-weight: 400;
   line-height: 180%;
 }
-/* line 128, main.scss */
+/* line 175, main.scss */
 div.main p img {
   margin: 20px auto;
   max-width: 100%;
 }
-/* line 134, main.scss */
+/* line 181, main.scss */
 div.main a {
   color: #80BCA3;
   text-decoration: none;
 }
 
-/* line 140, main.scss */
+/* line 187, main.scss */
 div#other {
   float: left;
   width: 150px;
   margin: 40px 20px 10px 25px;
   min-height: 600px;
 }
-/* line 146, main.scss */
+/* line 193, main.scss */
 div#other h3 {
   color: #677f9a;
   padding: 25px;
@@ -153,7 +200,7 @@ div#other h3 {
   font-family: arial, serif;
 }
 
-/* line 155, main.scss */
+/* line 202, main.scss */
 code {
   background-color: #eee;
   width: auto;
@@ -167,7 +214,7 @@ code {
   display: block;
 }
 
-/* line 168, main.scss */
+/* line 215, main.scss */
 span.light {
   background-color: #eee;
   overflow: auto;
